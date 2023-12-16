@@ -1,7 +1,7 @@
         /* 全局样式 */
         body {
   background-image: url("../img/background.svg");
-  background-color: rgb(104 99 99 / 35%);
+  background-color: rgb(14 14 14);
   background-repeat: no-repeat;
   background-position: center center;
   background-attachment: fixed;
@@ -186,11 +186,20 @@ backdrop-filter: blur(30px);
       border-radius: 10px;
       box-shadow: 0 0 10px rgba(0,0,0,0.2);
     }
-    h2 {
+    h3 {
       text-align: center;
       font-size: 28px;
       margin-bottom: 30px;
       color: #fff;
+    }
+	    h2 {
+      text-align: center;
+      font-size: 28px;
+      margin-bottom: 1px;
+      color: #fff;
+    }
+	p {
+      font-size: 14px;
     }
         /* 内容框样式 */
         .content-box {
@@ -250,7 +259,6 @@ backdrop-filter: blur(30px);
             border-radius: 4px;
             cursor: pointer;
             transition: background-color 0.3s ease-in-out;
-            margin-right: 38px;
         }
         
         .donate-button:hover {
@@ -330,15 +338,14 @@ backdrop-filter: blur(30px);
 }
 
 .footer .qr-code {
-  display: flex;
   align-items: center;
   flex-wrap: nowrap;
    margin-right: 35px; /* 调整此处的数值来向左移动 */
 }
 
 .footer .qr-code img {
-  height: 40px;
-  width: 40px;
+  height: 27px;
+    width: 94px;
   margin-right: 10px;
 }
 
@@ -349,10 +356,136 @@ backdrop-filter: blur(30px);
   overflow: hidden;
   text-overflow: ellipsis;
 }
+/* 第二页 */
+a,h1,h4,header,i,ul,li {
+	margin:0;
+	padding:0;
+	border:0;
+	font-size:100%;
+	font:inherit;
+	vertical-align:baseline;
+	list-style:none;
+}
+*,:after,:before {
+	box-sizing:border-box;
+}
+a {
+	text-decoration:none;
+	color:#ffffff;
+	-webkit-touch-callout:none;
+	-webkit-user-select:none;
+	-webkit-tap-highlight-color:transparent;
+	outline:none;
+	transition:color .1s ease;
+}
 
-
-
-
+header {
+	width:100%;
+	height:60px;
+	background-color:rgba(255,255,255,1);
+}
+main {
+	width:100%;
+	padding:10px;
+}
+.max {
+	max-width:750px;
+	margin:0 auto;
+}
+.flex {
+	display:flex;
+	justify-content:space-between;
+	align-items:center;
+}
+.flex-center {
+	justify-content:center!important;
+}
+.shadow {
+	background-color:#fff;
+}
+.header {
+	height:60px;
+	border-radius: 8px;
+	background-color: rgb(255 255 255 / 18%);
+backdrop-filter: blur(10px);
+}
+.header h1 {
+	font-size:18px;
+	color: #fff;
+}
+.notice {
+	width:100%!important;
+	margin:0 auto 10px!important;
+	padding:10px;
+	border-radius:5px!important;
+	background-color:rgba(254,168,2,.15)!important;
+}
+.notice i {
+	font-size:15px;
+	color:#FEA802;
+}
+.notice marquee {
+	width:calc(100% - 25px);
+}
+.notice h2 {
+	font-size:15px;
+	color:#FEA802;
+}
+.app {
+	width:100%;
+	padding:15px 10px 10px;
+	margin:0 auto 10px;
+	    background-color: rgb(255 255 255 / 18%);
+	backdrop-filter: blur(10px);
+	border-radius:5px;
+}
+.app-meta {
+	padding:10px 0 25px;
+}
+.app-meta h1 {
+	font-size:16px;
+	color: #aadada;
+}
+.app-meta h1 i {
+	font-size:16px;
+	color:#06f;
+	margin:0 5px 0 0;
+}
+.app-meta h2 {
+	font-size:14px;
+	color: #fff;
+}
+.app ul {
+	flex-wrap:wrap;
+	justify-content:flex-start!important;
+}
+.app-item {
+	width:calc(50% - 5px);
+	margin:0 10px 15px 0;
+	padding:10px;
+	background-color:#f3f5f7;
+	border-radius:5px;
+	overflow:hidden;
+}
+.app-item img {
+	width:26px;
+	height:26px;
+	border-radius:100%;
+	overflow:hidden;
+}
+.app-item h1 {
+	width:calc(100% - 56px);
+	font-size:14px;
+	font-weight:bold;
+	color:#666;
+}
+.app-item i {
+	font-size:20px;
+	color:#ccc;
+}
+.app-item:nth-child(2n) {
+	margin:0 0 15px 0;
+}
   /* 对于小屏幕设备，调整部分样式 */
 @media screen and (max-width: 480px) {
 .content-box {
@@ -365,8 +498,23 @@ backdrop-filter: blur(30px);
 .secondary-page {
 	width: 350px;
 	}
+	 body {
+  background-image: url("../img/background1.svg");
+  }
+  .footer .qr-code {
+    margin-right: 2px;
+}
+p {
+    font-size: 20px;
+}
+.header {
+	width: 90%;
+	}
 	  /* 对于小屏幕设备，调整部分样式 */
 @media screen and (max-width: 383px) {
+		 body {
+  background-image: url("../img/background1.svg");
+  }
 .content-box {
     width: 400px;
     height: 250px;
@@ -382,4 +530,13 @@ backdrop-filter: blur(30px);
 	}
 	.donate-button {
     padding: 6px 19px;
+	}
+	  .footer .qr-code {
+    margin-right: 1px;
+}
+p {
+    font-size: 20px;
+}
+.header {
+	width: 90%;
 	}
