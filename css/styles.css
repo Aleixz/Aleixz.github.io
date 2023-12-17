@@ -26,6 +26,7 @@
 	/* 修改此处将侧边栏布局改为右侧 */
   background-color:rgb(0 0 0 / 67%);
 	backdrop-filter:blur(20px);
+-webkit-backdrop-filter: blur( 20px);
 	overflow-x:hidden;
 	transition:0.5s;
 	padding-top:60px;
