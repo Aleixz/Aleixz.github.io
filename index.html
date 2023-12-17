@@ -1,241 +1,231 @@
 <!DOCTYPE html>
 <html>
-<head>
-<meta charset="utf-8">
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0">
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0">
     <title>安卓YUZU模拟器资源站</title>
-<link rel="stylesheet" href="./css/styles.css" />
-</head>
-<body>
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  
+  <body>
+    <div id="mySidepanel" class="sidepanel">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+      <a href="./another.html">游戏存档</a>
+      <a href="#one">GPU驱动</a>
+      <a onclick="openModal()">捐赠</a>
+    </div>
     <!-- 导航栏 -->
     <nav class="navbar">
-        <a href="#" class="navbar-logo"><span style="color: #0097ff;">YU</span><span style="color: red;">ZU</span>资源整合站</a>
-        <ul class="navbar-nav">
-<button class="donate-button" onclick="openModal()">捐赠</button>
-        </ul>
+      <a href="#" class="navbar-logo">
+        <span style="color: #0097ff;">YU</span><span style="color: red;">ZU</span>资源整合站</a>
+      <ul class="navbar-nav">
+        <button id="navbar-toggle" type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-navbar" aria-expanded="false" onclick="openNav()">
+          <span class="sr-only">
+          </span>
+          <span class="icon-bar">
+          </span>
+          <span class="icon-bar">
+          </span>
+          <span class="icon-bar">
+          </span>
+        </button>
+        <a class="page-scroll translate" href="./another.html">游戏存档</a>
+        <a class="page-scroll translate" href="#one">GPU驱动</a>
+        <a class="page-scroll" onclick="openModal()">捐赠</a>
+      </ul>
     </nav>
-
-
-	    <!-- 标题 -->
-<h3 class="container">YUZU安卓版</h3>
+    <!-- 标题 -->
+    <h3 class="container">YUZU安卓版</h3>
     <hr class="primary">
     <!-- 内容框容器 -->
     <div class="content-container">
-<!-- 内容框1 -->
-<div class="content-box" onclick="showSecondaryPage()">
-  <h2>每日更新版</h2>
-  <img src="img/path_to_icon1.jpg" width="60" height="60">
-  <p>更新日期12/16 版本号V162</p>
-</div>
-
-<!-- 二级页面 -->
-<div class="secondary-page" id="secondaryPage">
-  <button class="close-button" onclick="hideSecondaryPage()">❌</button>
-  <h2>您的下载正在开始</h2>
-  <img src="img/path_to_image.jpg" width="200" height="200" class="centered-image">
-  <p>扫码请UP主喝奶茶</p>
-  <p>记得在B站关注我噢，给个三联或者捐赠请我喝杯奶茶，谢谢！</p>
-  <button class="button">立刻下载</button>
-  <button class="button">关注UP</button>
-</div>
-
-        
-        <!-- 内容框2 -->
-        <div class="content-box" onclick="showSecondaryPage()">
-            <h2>正式版</h2>
-            <img src="img/path_to_icon2.jpg" width="60" height="60">
-            <p>偏向于较为稳定的版本</p>
-        </div>
-        <!-- 二级页面 -->
-<div class="secondary-page" id="secondaryPage">
-  <button class="close-button" onclick="hideSecondaryPage()">❌</button>
-  <h2>您的下载正在开始</h2>
-  <img src="img/path_to_image.jpg" width="200" height="200" class="centered-image">
-  <p>扫码请UP主喝奶茶</p>
-  <p>记得在B站关注我噢，给个三联或者捐赠请我喝杯奶茶，谢谢！</p>
-  <button class="button">立刻下载</button>
-  <button class="button">关注UP</button>
-</div>
-
-        <!-- 内容框3 -->
-        <div class="content-box" onclick="showSecondaryPage()">
-            <h2>EA捐赠版</h2>
-            <img src="img/yuzu-banner-early-access-white.svg" width="150" height="59">
-            <p>提前体验更多新功能</p>
-        </div>
-		        <!-- 二级页面 -->
-<div class="secondary-page" id="secondaryPage">
-  <button class="close-button" onclick="hideSecondaryPage()">❌</button>
-  <h2>您的下载正在开始</h2>
-  <img src="img/path_to_image.jpg" width="200" height="200" class="centered-image">
-  <p>扫码请UP主喝奶茶</p>
-  <p>记得在B站关注我噢，给个三联或者捐赠请我喝杯奶茶，谢谢！</p>
-  <button class="button">立刻下载</button>
-  <button class="button">关注UP</button>
-</div>
-		        <!-- 内容框4 -->
-        <div class="content-box" onclick="showSecondaryPage()">
-            <h2>密钥</h2>
-            <img src="img/keys_security_door_key_passkey_password_icon_256486.svg" width="60" height="50">
-            <p>选择合适的驱动可提高帧率与画面的稳定性</p>
-        </div>
-				        <!-- 二级页面 -->
-<div class="secondary-page" id="secondaryPage">
-  <button class="close-button" onclick="hideSecondaryPage()">❌</button>
-  <h2>您的下载正在开始</h2>
-  <img src="img/path_to_image.jpg" width="200" height="200" class="centered-image">
-  <p>扫码请UP主喝奶茶</p>
-  <p>记得在B站关注我噢，给个三联或者捐赠请我喝杯奶茶，谢谢！</p>
-  <button class="button">立刻下载</button>
-  <button class="button">关注UP</button>
-</div>
+      <!-- 内容框1 -->
+      <div class="content-box" onclick="showSecondaryPage()">
+        <h2>每日更新版</h2>
+        <img src="img/path_to_icon1.jpg" width="60" height="60">
+        <p>更新日期
+          <span style="color: #41ff00;">12/16</span>版本号
+          <span style="color: #ebff00;">V162</span>
+        </p>
+      </div>
+      <!-- 二级页面 -->
+      <div class="secondary-page" id="secondaryPage">
+        <button class="close-button" onclick="hideSecondaryPage()">❌</button>
+        <h2>您的下载正在开始</h2>
+        <img src="img/path_to_image.jpg" width="200" height="200" class="centered-image">
+        <p>扫码请UP主喝奶茶</p>
+        <p>记得在B站关注我噢，给个三联或者捐赠请我喝杯奶茶，谢谢！</p>
+        <button class="button">立刻下载</button>
+        <button class="button" onclick="window.location.href='https://space.bilibili.com/68110291'">关注UP</button>
+      </div>
+      <!-- 内容框2 -->
+      <div class="content-box" onclick="showSecondaryPage()">
+        <h2>正式版</h2>
+        <img src="img/path_to_icon2.jpg" width="60" height="60">
+        <p>偏向于较为稳定的版本</p>
+      </div>
+      <!-- 二级页面 -->
+      <div class="secondary-page" id="secondaryPage">
+        <button class="close-button" onclick="hideSecondaryPage()">❌</button>
+        <h2>您的下载正在开始</h2>
+        <img src="img/path_to_image.jpg" width="200" height="200" class="centered-image">
+        <p>扫码请UP主喝奶茶</p>
+        <p>记得在B站关注我噢，给个三联或者捐赠请我喝杯奶茶，谢谢！</p>
+        <button class="button">立刻下载</button>
+        <button class="button" onclick="window.location.href='https://space.bilibili.com/68110291'">关注UP</button>
+      </div>
+      <!-- 内容框3 -->
+      <div class="content-box" onclick="showSecondaryPage()">
+        <h2>EA捐赠版</h2>
+        <img src="img/yuzu-banner-early-access-white.svg" width="150" height="59">
+        <p>提前体验更多新功能</p>
+      </div>
+      <!-- 二级页面 -->
+      <div class="secondary-page" id="secondaryPage">
+        <button class="close-button" onclick="hideSecondaryPage()">❌</button>
+        <h2>您的下载正在开始</h2>
+        <img src="img/path_to_image.jpg" width="200" height="200" class="centered-image">
+        <p>扫码请UP主喝奶茶</p>
+        <p>记得在B站关注我噢，给个三联或者捐赠请我喝杯奶茶，谢谢！</p>
+        <button class="button">立刻下载</button>
+        <button class="button" onclick="window.location.href='https://space.bilibili.com/68110291'">关注UP</button>
+      </div>
+      <!-- 内容框4 -->
+      <div class="content-box" onclick="showSecondaryPage()">
+        <h2>密钥</h2>
+        <img src="img/keys_security_door_key_passkey_password_icon_256486.svg" width="60" height="50">
+        <p>选择合适的驱动可提高帧率与画面的稳定性</p>
+      </div>
+      <!-- 二级页面 -->
+      <div class="secondary-page" id="secondaryPage">
+        <button class="close-button" onclick="hideSecondaryPage()">❌</button>
+        <h2>您的下载正在开始</h2>
+        <img src="img/path_to_image.jpg" width="200" height="200" class="centered-image">
+        <p>扫码请UP主喝奶茶</p>
+        <p>记得在B站关注我噢，给个三联或者捐赠请我喝杯奶茶，谢谢！</p>
+        <button class="button">立刻下载</button>
+        <button class="button" onclick="window.location.href='https://space.bilibili.com/68110291'">关注UP</button>
+      </div>
     </div>
     <!-- 捐赠模态框 -->
     <div class="modal" id="modal">
-        <div class="modal-content">
-            <h2>请站长喝奶茶</h2>
-            <img src="path_to_qr_code_image.jpg" alt="二维码图片">
-            <p>鼓励站长每日更新YUZU模拟器新版本</p>
-            <p>您的捐赠将激励我持续维护更新的动力。</p>
-            <!-- OK按钮 -->
-            <button class="modal-button" onclick="closeModal()">OK</button>
-            <!-- 关闭按钮 -->
-        </div>
+      <div class="modal-content">
+        <h2>请站长喝奶茶</h2>
+        <img src="path_to_qr_code_image.jpg" alt="二维码图片">
+        <p>鼓励站长每日更新YUZU模拟器新版本</p>
+        <p>您的捐赠将激励我持续维护更新的动力。</p>
+        <!-- OK按钮 -->
+        <button class="modal-button" onclick="closeModal()">OK</button>
+        <!-- 关闭按钮 -->
+      </div>
     </div>
-
-    <div class="header max flex flex-center">
-        <h1>GPU驱动</h1>
+    <div class="header max flex flex-center" id="one">
+      <h1>GPU驱动</h1>
+    </div>
+    <main class="max">
+      <!--大板块-->
+      <main class="app">
+        <div class="app-meta flex">
+          <h1>
+            <i class="fan son-xing">
+            </i>888以下通用</h1>
+          <h4>选择合适的驱动以获得最佳帧率与画面的稳定性</h4>
         </div>
-    
-<main class="max">
-    <!--大板块-->
-    <main class="app">
-        <div class="app-meta flex">
-            <h1><i class="fan son-xing"></i>888以下通用</h1>
-            <h4>选择合适的驱动以获得最佳帧率与画面的稳定性</h4>
-            </div>
         <ul class="flex">
-            <li class="app-item">
-                <a class="flex" target="_blank" href="http://www.asp300.cn" rel="bookmark">
-                    <img class="app-item-img" src="img/site.png">
-                    <h1 class="app-item-title">24.0.0-devel紫先生 （版本1.3.273）</h1>
-                    <i class="fan son-you"></i>
-                    </a>
-                </li>
-            <li class="app-item">
-                <a class="flex" target="_blank" href="http://www.aqiyuanma.com/" rel="bookmark">
-                    <img class="app-item-img" src="img/site.png">
-                    <h1 class="app-item-title">待添加</h1>
-                    <i class="fan son-you"></i>
-                    </a>
-                </li>
-            <li class="app-item">
-                <a class="flex" target="_blank" href="https://www.aqiyuanma.com/" rel="bookmark">
-                    <img class="app-item-img" src="img/site.png">
-                    <h1 class="app-item-title">待添加</h1>
-                    <i class="fan son-you"></i>
-                    </a>
-                </li>
-            <li class="app-item">
-                <a class="flex" target="_blank" href="http://www.aqiyuanma.com/" rel="bookmark">
-                    <img class="app-item-img" src="img/site.png">
-                    <h1 class="app-item-title">待添加</h1>
-                    <i class="fan son-you"></i>
-                    </a>
-                </li>
-            </ul>
-        </main>  
-    <!--大板块-->
-    <main class="app">
+          <li class="app-item">
+            <a class="flex" target="_blank" href="https://space.bilibili.com/68110291" rel="bookmark">
+              <img class="app-item-img" src="img/site.png">
+              <h1 class="app-item-title">24.0.0-devel紫先生 （版本1.3.273）</h1>
+              <i class="fan son-you">
+              </i>
+            </a>
+          </li>
+          <li class="app-item">
+            <a class="flex" target="_blank" href="https://space.bilibili.com/68110291" rel="bookmark">
+              <img class="app-item-img" src="img/site.png">
+              <h1 class="app-item-title">待添加</h1>
+              <i class="fan son-you">
+              </i>
+            </a>
+          </li>
+          <li class="app-item">
+            <a class="flex" target="_blank" href="https://space.bilibili.com/68110291" rel="bookmark">
+              <img class="app-item-img" src="img/site.png">
+              <h1 class="app-item-title">待添加</h1>
+              <i class="fan son-you">
+              </i>
+            </a>
+          </li>
+          <li class="app-item">
+            <a class="flex" target="_blank" href="https://space.bilibili.com/68110291" rel="bookmark">
+              <img class="app-item-img" src="img/site.png">
+              <h1 class="app-item-title">待添加</h1>
+              <i class="fan son-you">
+              </i>
+            </a>
+          </li>
+        </ul>
+      </main>
+      <!--大板块-->
+      <main class="app">
         <div class="app-meta flex">
-            <h1><i class="fan son-xing"></i>8GEN1以上通用</h1>
-            </div>
+          <h1>
+            <i class="fan son-xing">
+            </i>8GEN1以上通用</h1>
+        </div>
         <ul class="flex">
-            <li class="app-item">
-                <a class="flex" target="_blank" href="http://zb.aqiyuanma.com/" rel="bookmark">
-                    <img class="app-item-img" src="img/site.png">
-                    <h1 class="app-item-title">24.0.0-devel紫先生 （版本1.3.273）</h1>
-                    <i class="fan son-you"></i>
-                    </a>
-                </li>
-            <li class="app-item">
-                <a class="flex" target="_blank" href="https://www.aqiyuanma.com/" rel="bookmark">
-                    <img class="app-item-img" src="img/site.png">
-                    <h1 class="app-item-title">待添加</h1>
-                    <i class="fan son-you"></i>
-                    </a>
-                </li>
-            <li class="app-item">
-                <a class="flex" target="_blank" href="https://www.aqiyuanma.com/" rel="bookmark">
-                    <img class="app-item-img" src="img/site.png">
-                    <h1 class="app-item-title">待添加</h1>
-                    <i class="fan son-you"></i>
-                    </a>
-                </li>
-            <li class="app-item">
-                <a class="flex" target="_blank" href="https://www.aqiyuanma.com/" rel="bookmark">
-                    <img class="app-item-img" src="img/site.png">
-                    <h1 class="app-item-title">待添加</h1>
-                    <i class="fan son-you"></i>
-                    </a>
-                </li>
-            </ul>
-        </main> 
+          <li class="app-item">
+            <a class="flex" target="_blank" href="https://space.bilibili.com/68110291" rel="bookmark">
+              <img class="app-item-img" src="img/site.png">
+              <h1 class="app-item-title">24.0.0-devel紫先生 （版本1.3.273）</h1>
+              <i class="fan son-you">
+              </i>
+            </a>
+          </li>
+          <li class="app-item">
+            <a class="flex" target="_blank" href="https://space.bilibili.com/68110291" rel="bookmark">
+              <img class="app-item-img" src="img/site.png">
+              <h1 class="app-item-title">待添加</h1>
+              <i class="fan son-you">
+              </i>
+            </a>
+          </li>
+          <li class="app-item">
+            <a class="flex" target="_blank" href="https://space.bilibili.com/68110291" rel="bookmark">
+              <img class="app-item-img" src="img/site.png">
+              <h1 class="app-item-title">待添加</h1>
+              <i class="fan son-you">
+              </i>
+            </a>
+          </li>
+          <li class="app-item">
+            <a class="flex" target="_blank" href="https://space.bilibili.com/68110291" rel="bookmark">
+              <img class="app-item-img" src="img/site.png">
+              <h1 class="app-item-title">待添加</h1>
+              <i class="fan son-you">
+              </i>
+            </a>
+          </li>
+        </ul>
+      </main>
     </main>
-    <script>
-        // 捐赠模态框控制
-        function openModal() {
-            document.getElementById('modal').style.opacity = '1';
-            document.getElementById('modal').style.visibility = 'visible';
-        }
-        
-        function closeModal() {
-            document.getElementById('modal').style.opacity = '0';
-            document.getElementById('modal').style.visibility = 'hidden';
-        }
-        
-        // 捐赠文本样式变化
-        function highlightDonate() {
-            document.querySelector('.donate-button').style.backgroundColor = '#6a1b9a';
-        }
-        
-        function unhighlightDonate() {
-            document.querySelector('.donate-button').style.backgroundColor = '#4b0082';
-        }
-function showSecondaryPage() {
-  var secondaryPage = document.getElementById('secondaryPage');
-  secondaryPage.classList.add('show');
-  setTimeout(function() {
-    secondaryPage.classList.add('bounceIn');
-  }, 100);
-}
-
-function hideSecondaryPage() {
-  var secondaryPage = document.getElementById('secondaryPage');
-  secondaryPage.classList.remove('bounceIn');
-  setTimeout(function() {
-    secondaryPage.classList.remove('show');
-  }, 500);
-}
-
-
-
+    <script src="./js/jjss.js">
     </script>
-<body>
-  <div class="air-wall"></div>
-  
-  <footer class="footer">
-    <div class="copyright">
-      &copy; 2023 Aleixz.github.io. All rights reserved. 本网站仅供学习目的，不涉及任何商业行为。
-    </div>
-<div class="qr-code">
-    <a href="https://space.bilibili.com/68110291" target="_blank">
-        <div class="qr-code-text">点击关注UP</div>
-        <img src="img/eff71e52af653a70e0d857b300d3c6b69c388edb.png" alt="QR Code">
-    </a>
-</div>
-  </footer>
-</body>
+    
+    <body>
+      <div class="air-wall">
+      </div>
+      <footer class="footer">
+        <div class="copyright">&copy; 2023 Aleixz.github.io. All rights reserved. 本网站仅供学习目的，不涉及任何商业行为。</div>
+        <div class="qr-code">
+          <a href="https://space.bilibili.com/68110291" target="_blank">
+            <div class="qr-code-text">点击关注UP</div>
+            <img src="img/eff71e52af653a70e0d857b300d3c6b69c388edb.png" alt="QR Code">
+          </a>
+        </div>
+      </footer>
+    </body>
 
 </html>
