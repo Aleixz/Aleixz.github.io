@@ -24,7 +24,7 @@ document.getElementById("downloadButton4").addEventListener("click", function() 
 // GPU链接1
 document.getElementById("bilibiliLink1").href = "https://dlink.host/lanzou/aHR0cHM6Ly93d3AubGFuem91cC5jb20vaTVNRk8xaWN0Zjhq.jpg";
 // GPU链接2
-document.getElementById("bilibiliLink2").href = "#";
+document.getElementById("bilibiliLink2").href = "https://dlink.host/lanzou/aHR0cHM6Ly93d3AubGFuem91cC5jb20vaVJHWVIxaWRkenViJnBhc3NDb2RlPQ.jpg";
 // GPU链接3
 document.getElementById("bilibiliLink3").href = "#";
 // GPU链接4
@@ -33,7 +33,7 @@ document.getElementById("bilibiliLink4").href = "#";
 // GPU链接1
 document.getElementById("bilibiliLink5").href = "https://dlink.host/lanzou/aHR0cHM6Ly93d3AubGFuem91cC5jb20vaTVNRk8xaWN0Zjhq.jpg";
 // GPU链接2
-document.getElementById("bilibiliLink6").href = "#";
+document.getElementById("bilibiliLink6").href = "https://dlink.host/lanzou/aHR0cHM6Ly93d3AubGFuem91cC5jb20vaVJHWVIxaWRkenViJnBhc3NDb2RlPQ.jpg";
 // GPU链接3
 document.getElementById("bilibiliLink7").href = "#";
 // GPU链接4
