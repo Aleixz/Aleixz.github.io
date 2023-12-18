@@ -51,11 +51,9 @@ document.querySelector('a[href="#one"]').addEventListener('click', function(even
 });
 document.getElementById("date").textContent = "12/18";// 更新日期
 document.getElementById("date").style.color = "#41ff00";
-document.getElementById("date").style.fontSize = "22px";
 
 document.getElementById("version").textContent = "V164";// 更新版本号
 document.getElementById("version").style.color = "#ebff00";
-document.getElementById("version").style.fontSize = "22px";
 // 每日更新版链接
 document.getElementById("downloadButton1").addEventListener("click", function() {
   redirect('https://dlink.host/lanzou/aHR0cHM6Ly93d3AubGFuem91cC5jb20vaTY2M1YxaWNuOW1iJnBhc3NDb2RlPTc2Ym4.jpg');
@@ -90,3 +88,24 @@ document.getElementById("bilibiliLink6").href = "#";
 document.getElementById("bilibiliLink7").href = "#";
 // GPU链接4
 document.getElementById("bilibiliLink8").href = "#";
+
+if (typeof Object.assign !== 'function') {
+  Object.assign = function(target) {
+    if (target == null) {
+      throw new TypeError('Cannot convert undefined or null to object');
+    }
+
+    target = Object(target);
+    for (var index = 1; index < arguments.length; index++) {
+      var source = arguments[index];
+      if (source != null) {
+        for (var key in source) {
+          if (Object.prototype.hasOwnProperty.call(source, key)) {
+            target[key] = source[key];
+          }
+        }
+      }
+    }
+    return target;
+  };
+}
