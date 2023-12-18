@@ -531,7 +531,6 @@ main {
 .app-item img {
 	width:26px;
 	height:26px;
-	border-radius:100%;
 	overflow:hidden;
 }
 .app-item h1 {
