@@ -35,6 +35,6 @@ document.getElementById("bilibiliLink5").href = "https://dlink.host/lanzou/aHR0c
 // GPU链接2
 document.getElementById("bilibiliLink6").href = "https://dlink.host/lanzou/aHR0cHM6Ly93d3AubGFuem91cC5jb20vaVJHWVIxaWRkenViJnBhc3NDb2RlPQ.jpg";
 // GPU链接3
-document.getElementById("bilibiliLink7").href = "#";
+document.getElementById("bilibiliLink7").href = "https://dlink.host/lanzou/aHR0cHM6Ly93d3AubGFuem91cC5jb20vaUlDNDYxaWRpNXBn.jpg";
 // GPU链接4
-document.getElementById("bilibiliLink8").href = "#";
+document.getElementById("bilibiliLink8").href = "https://dlink.host/lanzou/aHR0cHM6Ly93d3AubGFuem91cC5jb20vaUkyWk4xaWRpNWhp.jpg";
