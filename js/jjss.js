@@ -49,6 +49,13 @@ document.querySelector('a[href="#one"]').addEventListener('click', function(even
   var header = document.querySelector('#one');
   header.scrollIntoView();
 });
+document.getElementById("date").textContent = "12/18";// 更新日期
+document.getElementById("date").style.color = "#41ff00";
+document.getElementById("date").style.fontSize = "22px";
+
+document.getElementById("version").textContent = "V164";// 更新版本号
+document.getElementById("version").style.color = "#ebff00";
+document.getElementById("version").style.fontSize = "22px";
 // 每日更新版链接
 document.getElementById("downloadButton1").addEventListener("click", function() {
   redirect('https://dlink.host/lanzou/aHR0cHM6Ly93d3AubGFuem91cC5jb20vaTY2M1YxaWNuOW1iJnBhc3NDb2RlPTc2Ym4.jpg');
