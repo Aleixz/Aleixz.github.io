@@ -26,7 +26,7 @@ document.getElementById("bilibiliLink1").href = "https://dlink.host/lanzou/aHR0c
 // GPU链接2
 document.getElementById("bilibiliLink2").href = "https://dlink.host/lanzou/aHR0cHM6Ly93d3AubGFuem91cC5jb20vaVJHWVIxaWRkenViJnBhc3NDb2RlPQ.jpg";
 // GPU链接3
-document.getElementById("bilibiliLink3").href = "#";
+document.getElementById("bilibiliLink3").href = "https://dlink.host/lanzou/aHR0cHM6Ly93d3AubGFuem91cC5jb20vaU5FNlMxaWRpNXpn.jpg";
 // GPU链接4
 document.getElementById("bilibiliLink4").href = "#";
 // 8GEN1以上
