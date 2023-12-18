@@ -75,7 +75,7 @@ body::before {
 	width:100%;
 	height:100%;
 	opacity:0.5;
-	background:linear-gradient(to right,rgba(7,44,225,0.4),rgba(251,215,1,0.34),rgba(161,7,225,0.34));
+	background: linear-gradient(to right,rgb(11 255 208 / 40%),rgba(161,7,225,0.34),rgba(251,215,1,0.34));
 	z-index:-1;
 	animation:alternateColors 16s linear infinite;
 }
