@@ -49,6 +49,21 @@ document.querySelector('a[href="#one"]').addEventListener('click', function(even
   var header = document.querySelector('#one');
   header.scrollIntoView();
 });
+ // 公告
+function showWebNotice() {
+  var webNotice = document.getElementById("webNotice");
+  webNotice.style.display = "block";
+  setTimeout(function() {
+    webNotice.classList.add("fade-in");
+  }, 10);
+}
+
 function removeWebNotice() {
-  document.querySelector('.web_notice').remove();
+  var webNotice = document.getElementById("webNotice");
+  webNotice.classList.remove("fade-in");
+  webNotice.classList.add("fade-out");
+  setTimeout(function() {
+    webNotice.style.display = "none";
+    webNotice.classList.remove("fade-out");
+  }, 400);
 }
