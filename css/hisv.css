@@ -1,0 +1,48 @@
+/* 打开和关闭手风琴面板的样式 */
+.accordion {
+    background-color:rgb(0 0 0 / 50%);;
+	backdrop-filter:blur(20px);
+  color: #fff;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+  border-radius: 10px;
+  margin-top: 10px; /* 添加上间距 */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+ 
+/* 设置点击和鼠标移到选项上面时（悬停）的样式 */
+.active, .accordion:hover {
+  background-color: #ccc6;;
+}
+ 
+/* 为手风琴面板设计样式。 默认隐藏 */
+.panel {
+  border-radius: 10px;
+  padding: 0 18px;
+  background-color: #6565654a;
+  backdrop-filter: blur(10px);
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+/* 设置 +、- 标志 */
+.accordion:after {
+  content: '\002B';  /* Unicode 字符 + 号 */
+  color: #f3f3f3;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+ 
+.active:after { 
+  content: "\2212";  /* Unicode 字符 - 号 */
+}
+.special-p {
+  font-size: 15px;
+  color: red;
+}
