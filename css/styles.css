@@ -340,7 +340,7 @@ p {
 /* 内容框样式 */
         .content-box {
 	width:200px;
-	height:200px;
+	height:210px;
 	background-color:rgb(255 255 255 / 18%);
 	backdrop-filter:blur(10px);
 	margin:20px;
@@ -606,7 +606,7 @@ main {
 @media screen and (max-width:509px) {
 	.content-box {
 	width:400px;
-	height:250px;
+	height:260px;
 }
 .modal {
 	width:350px;
@@ -636,7 +636,7 @@ a.page-scroll.translate,a.page-scroll[href="#one"],a.page-scroll[onclick="openMo
 }
 .content-box {
 	width:400px;
-	height:250px;
+	height:260px;
 }
 .modal {
 	width:350px;
