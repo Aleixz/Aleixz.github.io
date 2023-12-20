@@ -546,7 +546,7 @@ main {
 	margin:0 0 15px 0;
 }
 /* 对于小屏幕设备，调整部分样式 */
-@media screen and (max-width:480px) {
+@media screen and (max-width:509px) {
 	.content-box {
 	width:400px;
 	height:250px;
@@ -605,7 +605,7 @@ p {
 a.page-scroll.translate,a.page-scroll[href="#one"],a.page-scroll[onclick="openModal()"] {
 	display:none;
 }
-}@media screen and (min-width:481px) {
+}@media screen and (min-width:510px) {
 	#navbar-toggle {
 	display:none;
 }
