@@ -2,7 +2,7 @@
 // 版本号
 document.getElementById("1").textContent = "v165";
 // 设置链接
-document.getElementById("link1").href = "https://www.baidu.com";
+document.getElementById("link1").href = "https://dlink.host/lanzou/aHR0cHM6Ly93d3lyLmxhbnpvdXUuY29tL2laMzY3MWlkeHR4aSZwYXNzQ29kZT01d3h4.jpg";
 
 // 设置字体大小和颜色
 document.getElementById("link1").style.fontSize = "16px";
@@ -10,9 +10,9 @@ document.getElementById("link1").style.color = "white";
 
                         // 二号链接
 // 版本号
-document.getElementById("2").textContent = "v165";
+document.getElementById("2").textContent = "v164";
 // 设置链接
-document.getElementById("link2").href = "https://www.baidu.com";
+document.getElementById("link2").href = "https://dlink.host/lanzou/aHR0cHM6Ly93d3lyLmxhbnpvdXUuY29tL2k2NjNWMWljbjltYiZwYXNzQ29kZT03NmJu.jpg";
 
 // 设置字体大小和颜色
 document.getElementById("link2").style.fontSize = "16px";
@@ -20,9 +20,9 @@ document.getElementById("link2").style.color = "white";
 
                         // 三号链接
 // 版本号
-document.getElementById("3").textContent = "v165";
+document.getElementById("3").textContent = "v163";
 // 设置链接
-document.getElementById("link3").href = "https://www.baidu.com";
+document.getElementById("link3").href = "https://dlink.host/lanzou/aHR0cHM6Ly93d3lyLmxhbnpvdXUuY29tL2lURklFMWlqYTE2YiZwYXNzQ29kZT0za3Rn.jpg";
 
 // 设置字体大小和颜色
 document.getElementById("link3").style.fontSize = "16px";
@@ -30,9 +30,9 @@ document.getElementById("link3").style.color = "white";
 
                         // 四号链接
 // 版本号
-document.getElementById("4").textContent = "v165";
+document.getElementById("4").textContent = "v162";
 // 设置链接
-document.getElementById("link4").href = "https://www.baidu.com";
+document.getElementById("link4").href = "https://dlink.host/lanzou/aHR0cHM6Ly93d3lyLmxhbnpvdXUuY29tL2lMWFY2MWlqYTVtYiZwYXNzQ29kZT1lbGI2.jpg";
 
 // 设置字体大小和颜色
 document.getElementById("link4").style.fontSize = "16px";
@@ -40,9 +40,9 @@ document.getElementById("link4").style.color = "white";
 
                         // 五号链接
 // 版本号
-document.getElementById("5").textContent = "v165";
+document.getElementById("5").textContent = "v161";
 // 设置链接
-document.getElementById("link5").href = "https://www.baidu.com";
+document.getElementById("link5").href = "https://dlink.host/lanzou/aHR0cHM6Ly93d3lyLmxhbnpvdXUuY29tL2lXMjExMWlqYTRyYSZwYXNzQ29kZT04NThu.jpg";
 
 // 设置字体大小和颜色
 document.getElementById("link5").style.fontSize = "16px";
@@ -50,9 +50,9 @@ document.getElementById("link5").style.color = "white";
 
                         // 六号链接
 // 版本号
-document.getElementById("6").textContent = "v165";
+document.getElementById("6").textContent = "v160";
 // 设置链接
-document.getElementById("link6").href = "https://www.baidu.com";
+document.getElementById("link6").href = "https://dlink.host/lanzou/aHR0cHM6Ly93d3lyLmxhbnpvdXUuY29tL2lDMllZMWlqYTV2YSZwYXNzQ29kZT1icWJr.jpg";
 
 // 设置字体大小和颜色
 document.getElementById("link6").style.fontSize = "16px";
