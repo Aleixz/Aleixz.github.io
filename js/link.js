@@ -12,9 +12,9 @@ document.getElementById("downloadButton1").addEventListener("click", function() 
 document.getElementById("downloadButton2").addEventListener("click", function() {
   redirect('https://dlink.host/lanzou/aHR0cHM6Ly93d3AubGFuem91cC5jb20vaTVTUk8xaWNycTdjJnBhc3NDb2RlPWFhZ3k.jpg');
 });
-// EA版链接
+// 固件链接
 document.getElementById("downloadButton3").addEventListener("click", function() {
-  redirect('https://dlink.host/lanzou/aHR0cHM6Ly93d3AubGFuem91cC5jb20vaTRGUTMxaWN1Z3hnJnBhc3NDb2RlPWFuMGI.jpg');
+  redirect('https://dlink.host/189/aHR0cHM6Ly9jbG91ZC4xODkuY24vdC9hMnFVRnYyWXIyMmEmcGFzc0NvZGU9em92Ng.jpg');
 });
 // 密钥链接
 document.getElementById("downloadButton4").addEventListener("click", function() {
