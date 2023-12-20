@@ -49,3 +49,6 @@ document.querySelector('a[href="#one"]').addEventListener('click', function(even
   var header = document.querySelector('#one');
   header.scrollIntoView();
 });
+function removeWebNotice() {
+  document.querySelector('.web_notice').remove();
+}
