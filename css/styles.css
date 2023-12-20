@@ -27,12 +27,14 @@
   position: fixed;
   top: 50%;
   left: 50%;
-  width: 95%; /* 设置为100% */
-  max-width: 450px; /* 添加max-width属性 */
+  width: 95%;
+  height: auto;
+  max-width: 450px;
   background: #fff;
   transform: translate(-50%, -50%);
   border-radius: 40px;
   padding: 40px 40px;
+  overflow: hidden; /* 添加溢出隐藏 */
 }
 
 .web_notice_content h5 {
@@ -47,6 +49,7 @@
   margin-top: 26px;
   line-height: 30px;
   color: #999;
+  overflow-y: auto; /* 添加垂直滚动条 */
 }
 
 .acknowledge_btn {
@@ -62,15 +65,7 @@
   border-radius: 32px;
   width: 80%;
 }
-.fade-in {
-  opacity: 1;
-  transition: opacity 0.4s;
-}
 
-.fade-out {
-  opacity: 0;
-  transition: opacity 0.4s;
-}
 /* 固件文本间距 */
 .firmware-info {
   margin-bottom: 1px;
@@ -635,6 +630,9 @@ p {
 .header {
 	width:90%;
 }
+.website_info {
+    max-height: 250px;
+}
 a.page-scroll.translate,a.page-scroll[href="#one"],a.page-scroll[onclick="openModal()"] {
 	display:none;
 }
@@ -667,6 +665,9 @@ p {
 }
 .header {
 	width:90%;
+}
+.website_info {
+    max-height: 250px;
 }
 a.page-scroll.translate,a.page-scroll[href="#one"],a.page-scroll[onclick="openModal()"] {
 	display:none;
