@@ -14,7 +14,7 @@ document.getElementById("downloadButton2").addEventListener("click", function() 
 });
 // 固件链接
 document.getElementById("downloadButton3").addEventListener("click", function() {
-  redirect('https://dlink.host/189/aHR0cHM6Ly9jbG91ZC4xODkuY24vdC9hMnFVRnYyWXIyMmEmcGFzc0NvZGU9em92Ng.jpg');
+  redirect('http://www.918.plus/down.php/907f7c99ba54ff84aba5dfc9e22df968.zip');
 });
 // 密钥链接
 document.getElementById("downloadButton4").addEventListener("click", function() {
