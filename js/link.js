@@ -38,7 +38,7 @@ document.getElementById("bilibiliLink6").href = "https://dlink.host/lanzou/aHR0c
 document.getElementById("bilibiliLink7").href = "https://dlink.host/lanzou/aHR0cHM6Ly93d3AubGFuem91cC5jb20vaUlDNDYxaWRpNXBn.jpg";
 // GPU链接4
 document.getElementById("bilibiliLink8").href = "https://dlink.host/lanzou/aHR0cHM6Ly93d3AubGFuem91cC5jb20vaUkyWk4xaWRpNWhp.jpg";
-
+// 自动刷新js
 if (typeof Object.assign !== 'function') {
   Object.assign = function(target) {
     if (target == null) {
