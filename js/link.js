@@ -14,7 +14,7 @@ document.getElementById("downloadButton2").addEventListener("click", function() 
 });
 // 固件链接
 document.getElementById("downloadButton3").addEventListener("click", function() {
-  redirect('http://www.918.plus/down.php/907f7c99ba54ff84aba5dfc9e22df968.zip');
+  redirect('http://www.918.plus/down.php/907f7c99ba54ff84aba5dfc9e22df968.zip]Firmware 17.0.0.zip');
 });
 // 密钥链接
 document.getElementById("downloadButton4").addEventListener("click", function() {
