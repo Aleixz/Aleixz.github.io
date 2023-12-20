@@ -53,17 +53,23 @@ document.querySelector('a[href="#one"]').addEventListener('click', function(even
 function showWebNotice() {
   var webNotice = document.getElementById("webNotice");
   webNotice.style.display = "block";
-  setTimeout(function() {
-    webNotice.classList.add("fade-in");
-  }, 10);
 }
 
 function removeWebNotice() {
   var webNotice = document.getElementById("webNotice");
-  webNotice.classList.remove("fade-in");
-  webNotice.classList.add("fade-out");
-  setTimeout(function() {
-    webNotice.style.display = "none";
-    webNotice.classList.remove("fade-out");
-  }, 400);
+  webNotice.style.display = "none";
+  var currentTime = new Date().getTime();
+  var expirationTime = currentTime + 24 * 60 * 60 * 1000; // 设置缓存过期时间为24小时
+  localStorage.setItem("webNoticeExpiration", expirationTime);
 }
+
+document.addEventListener("DOMContentLoaded", function() {
+  var webNotice = document.getElementById("webNotice");
+  var webNoticeExpiration = localStorage.getItem("webNoticeExpiration");
+  if (!webNoticeExpiration || new Date().getTime() > webNoticeExpiration) {
+    setTimeout(function() {
+      webNotice.style.display = "block";
+    }, 1000);
+  }
+});
+
