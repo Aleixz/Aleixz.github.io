@@ -631,7 +631,7 @@ p {
 	width:90%;
 }
 .website_info {
-    max-height: 250px;
+    max-height: 260px;
 }
 a.page-scroll.translate,a.page-scroll[href="#one"],a.page-scroll[onclick="openModal()"] {
 	display:none;
