@@ -58,7 +58,7 @@ document.getElementById("link6").href = "https://dlink.host/lanzou/aHR0cHM6Ly93d
 document.getElementById("link6").style.fontSize = "16px";
 document.getElementById("link6").style.color = "white";
 
-// 六号链接
+// 七号链接
 // 版本号
 document.getElementById("166").textContent = "v166";
 // 设置链接
