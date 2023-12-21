@@ -58,6 +58,16 @@ document.getElementById("link6").href = "https://dlink.host/lanzou/aHR0cHM6Ly93d
 document.getElementById("link6").style.fontSize = "16px";
 document.getElementById("link6").style.color = "white";
 
+// 六号链接
+// 版本号
+document.getElementById("166").textContent = "v166";
+// 设置链接
+document.getElementById("link7").href = "https://dlink.host/lanzou/aHR0cHM6Ly93d3AubGFuem91cC5jb20vaTJISE4xaWgzbHNqJnBhc3NDb2RlPWI1a3o.jpg";
+
+// 设置字体大小和颜色
+document.getElementById("link5").style.fontSize = "16px";
+document.getElementById("link5").style.color = "white";
+
 var acc = document.getElementsByClassName("accordion");
 var i;
 
