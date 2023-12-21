@@ -24,11 +24,17 @@
 .panel {
   border-radius: 10px;
   padding: 0 18px;
-  background-color: #6565654a;
   backdrop-filter: blur(10px);
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.2s ease-out;
+}
+
+.panel a {
+    border-top: 1px solid #8c8b8bd6;
+  display: block;
+  padding: 10px 0;
+  text-decoration: none;
 }
 /* 设置 +、- 标志 */
 .accordion:after {
