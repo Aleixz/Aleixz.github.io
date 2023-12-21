@@ -1,0 +1,48 @@
+.footer-button {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #000;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.footer-button span {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 5px;  /* 将 margin-right 改为 margin-left */
+  animation: bounce 1s infinite;
+}
+
+@keyframes bounce {
+  0% { transform: translateX(0); }
+  50% { transform: translateX(-5px); }  /* 将 transform 的值改为负数 */
+  100% { transform: translateX(0); }
+}
+
+.waterfall-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.waterfall-item {
+  width: calc(33.33% - 20px);
+  margin: 10px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+@media only screen and (max-width: 768px) {
+  .waterfall-item {
+    width: calc(50% - 20px);
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .waterfall-item {
+    width: calc(100% - 20px);
+  }
+}
