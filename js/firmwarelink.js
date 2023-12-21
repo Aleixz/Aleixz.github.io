@@ -2,7 +2,7 @@
 // 版本号
 document.getElementById("01").textContent = "v17.0.0";
 // 设置链接
-document.getElementById("link01").href = "https://dlink.host/lanzou/aHR0cHM6Ly93d3lyLmxhbnpvdXUuY29tL2laMzY3MWlkeHR4aSZwYXNzQ29kZT01d3h4.jpg";
+document.getElementById("link01").href = "http://www.918.plus/down.php/907f7c99ba54ff84aba5dfc9e22df968.zip]Firmware 17.0.0.zip";
 
 // 设置字体大小和颜色
 document.getElementById("link01").style.fontSize = "16px";
@@ -12,7 +12,7 @@ document.getElementById("link01").style.color = "white";
 // 版本号
 document.getElementById("02").textContent = "v16.1.0";
 // 设置链接
-document.getElementById("link02").href = "https://dlink.host/lanzou/aHR0cHM6Ly93d3lyLmxhbnpvdXUuY29tL2laMzY3MWlkeHR4aSZwYXNzQ29kZT01d3h4.jpg";
+document.getElementById("link02").href = "http://www.918.plus/down.php/c32db52758a4bf6503869db531012e3d.zip]Firmware 16.1.0.zip";
 
 // 设置字体大小和颜色
 document.getElementById("link02").style.fontSize = "16px";
