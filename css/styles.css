@@ -63,6 +63,7 @@
   margin: 0 auto;
   margin-top: 45px;
   border-radius: 32px;
+  cursor: pointer;
   width: 80%;
 }
 
