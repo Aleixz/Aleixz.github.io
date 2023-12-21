@@ -29,7 +29,6 @@
 }
 
 .waterfall-item {
-  width: calc(33.33% - 20px);
   margin: 10px;
   background-color: #f2f2f2;
   padding: 20px;
