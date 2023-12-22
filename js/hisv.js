@@ -64,9 +64,15 @@ document.getElementById("166").textContent = "v166";
 // 设置链接
 document.getElementById("link7").href = "https://dlink.host/lanzou/aHR0cHM6Ly93d3AubGFuem91cC5jb20vaTJISE4xaWgzbHNqJnBhc3NDb2RlPWI1a3o.jpg";
 
+// 八号链接
+// 版本号
+document.getElementById("167").textContent = "v167";
+// 设置链接
+document.getElementById("link8").href = "https://dlink.host/lanzou/aHR0cHM6Ly93d3AubGFuem91cC5jb20vaUtZWkcxaWsybjdjJnBhc3NDb2RlPTh3dXA.jpg";
+
 // 设置字体大小和颜色
-document.getElementById("link7").style.fontSize = "16px";
-document.getElementById("link7").style.color = "white";
+document.getElementById("link8").style.fontSize = "16px";
+document.getElementById("link8").style.color = "white";
 
 var acc = document.getElementsByClassName("accordion");
 var i;
