@@ -52,6 +52,11 @@ document.getElementById("168").textContent = "v168";
 // 设置链接
 document.getElementById("link9").href = "https://dlink.host/lanzou/aHR0cHM6Ly93d3lyLmxhbnpvdXUuY29tL2kzUmhoMWluOWhkYyZwYXNzQ29kZT03ejlu.jpg";
 
+// 九号链接
+// 版本号
+document.getElementById("169").textContent = "v169";
+// 设置链接
+document.getElementById("link10").href = "https://dlink.host/lanzou/aHR0cHM6Ly93d3AubGFuem91cC5jb20vaUEyN0MxaXBvOHpjJnBhc3NDb2RlPTNjdXU.jpg";
 var acc = document.getElementsByClassName("accordion");
 var i;
 
