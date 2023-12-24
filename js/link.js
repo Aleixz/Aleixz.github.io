@@ -1,12 +1,12 @@
-document.getElementById("date").textContent = "12/23";// 更新日期
+document.getElementById("date").textContent = "12/24";// 更新日期
 document.getElementById("date").style.color = "#41ff00";
 
-document.getElementById("version").textContent = "V169";// 更新版本号
+document.getElementById("version").textContent = "V170";// 更新版本号
 document.getElementById("version").style.color = "#ebff00";
 
 // 每日更新版链接
 document.getElementById("downloadButton1").addEventListener("click", function() {
-  redirect('https://dlink.host/lanzou/aHR0cHM6Ly93d3AubGFuem91cC5jb20vaUEyN0MxaXBvOHpjJnBhc3NDb2RlPTNjdXU.jpg');
+  redirect('https://dlink.host/lanzou/aHR0cHM6Ly93d3AubGFuem91cC5jb20vaUs1NUExaXQwaW5hJnBhc3NDb2RlPTRldjA.jpg');
 });
 // 正式版链接
 document.getElementById("downloadButton2").addEventListener("click", function() {
