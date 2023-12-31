@@ -12,6 +12,17 @@
 	padding:0;
 	font-family:Arial,sans-serif;
 }
+/* 教程内容框 */
+.my-container {
+	width:96%;
+	max-width:800px;
+	margin:100px auto;
+	margin-bottom:80px;
+	padding:20px;
+	backdrop-filter: blur(16px);
+	border-radius:10px;
+	box-shadow:0 0 10px rgba(0,0,0,0.2);
+}
 /* 公告样式 */
 .web_notice {
   position: fixed;
