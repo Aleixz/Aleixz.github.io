@@ -20,8 +20,9 @@
 	margin-bottom:80px;
 	padding:20px;
 	backdrop-filter: blur(16px);
+	background-color: rgb(12 12 12 / 62%);
 	border-radius:10px;
-	box-shadow:0 0 10px rgba(0,0,0,0.2);
+	box-shadow: 0 0 10px rgb(0 0 0);
 }
 /* 公告样式 */
 .web_notice {
