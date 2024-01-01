@@ -8,10 +8,27 @@
 	background-size:cover;
 	color:#fff;
 	/* 字体颜色 */
-            margin:0;
+        margin:0;
 	padding:0;
 	font-family:Arial,sans-serif;
 }
+  /* 添加滚动条样式 */
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background-color: #f1f1f1;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background-color: #888;
+    border-radius: 4px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: #555;
+  }
 /* 教程伸展样式 */
   #faq-list .toggle-button {
     background: none;
@@ -22,7 +39,7 @@
     padding: 0;
     position: relative;
     transition: transform 0.3s ease-in-out;
-	font-size: 16px;
+    font-size: 16px;
   }
 
   #faq-list .toggle-button::after {
@@ -37,14 +54,14 @@
   }
 /* 教程内容框 */
 .my-container {
-	width:96%;
-	max-width:800px;
-	margin:100px auto;
-	margin-bottom:80px;
-	padding:20px;
-	background-color: rgb(12 12 12 / 97%);
-	border-radius:10px;
-	box-shadow: 0 0 10px rgb(0 0 0);
+width:96%;
+max-width:800px;
+margin:100px auto;
+margin-bottom:80px;
+padding:20px;
+background-color: rgb(12 12 12 / 97%);
+border-radius:10px;
+box-shadow: 0 0 10px rgb(0 0 0);
 }
 /* 公告样式 */
 .web_notice {
@@ -444,9 +461,9 @@ p {
         .modal-button {
 	background-color:#fff;
 	/* 白色背景 */
-            color:#000;
+        color:#000;
 	/* 字体颜色 */
-            border:none;
+        border:none;
 	border-radius:4px;
 	padding:10px 20px;
 	font-size:16px;
