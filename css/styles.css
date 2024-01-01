@@ -42,8 +42,7 @@
 	margin:100px auto;
 	margin-bottom:80px;
 	padding:20px;
-	backdrop-filter: blur(16px);
-	background-color: rgb(12 12 12 / 62%);
+	background-color: rgb(12 12 12 / 97%);
 	border-radius:10px;
 	box-shadow: 0 0 10px rgb(0 0 0);
 }
