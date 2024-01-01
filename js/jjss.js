@@ -1,4 +1,64 @@
-        // 捐赠模态框控制
+// 创建雪花
+function createSnowflake(canvas) {
+  const ctx = canvas.getContext("2d");
+  const size = Math.random() * 4 + 2;
+  const x = Math.random() * canvas.width;
+  const y = -size - Math.random() * canvas.height;
+  const speedY = Math.random() * 2 + 1;
+
+  ctx.beginPath();
+  ctx.arc(x, y, size, 0, Math.PI * 2);
+  ctx.fillStyle = "white";
+  ctx.fill();
+
+  return { x, y, size: Math.min(size, 80), speedY }; // 限制雪花大小不超过80px
+}
+
+// 更新雪花位置
+function updateSnowflake(canvas, snowflake) {
+  const ctx = canvas.getContext("2d");
+  snowflake.y += snowflake.speedY;
+
+  ctx.beginPath();
+  ctx.arc(snowflake.x, snowflake.y, snowflake.size, 0, Math.PI * 2);
+  ctx.fillStyle = "white";
+  ctx.fill();
+
+  if (snowflake.y > canvas.height) {
+    snowflake.y = -snowflake.size;
+    snowflake.x = Math.random() * canvas.width;
+  }
+}
+
+// 创建雪花动画
+function createSnowfall() {
+  const canvas = document.getElementById("snow-canvas");
+  const ctx = canvas.getContext("2d");
+  const snowflakes = [];
+
+  canvas.width = window.innerWidth;
+  canvas.height = window.innerHeight;
+
+  function loop() {
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+    while (snowflakes.length < 100) {
+      snowflakes.push(createSnowflake(canvas));
+    }
+
+    for (let i = 0; i < snowflakes.length; i++) {
+      updateSnowflake(canvas, snowflakes[i]);
+    }
+
+    requestAnimationFrame(loop);
+  }
+
+  loop();
+}
+
+createSnowfall();
+
+// 捐赠模态框控制
         function openModal() {
             document.getElementById('modal').style.opacity = '1';
             document.getElementById('modal').style.visibility = 'visible';
