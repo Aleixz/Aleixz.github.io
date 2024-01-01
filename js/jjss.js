@@ -1,14 +1,20 @@
 // 加载动画
-  const imageContainers = document.querySelectorAll('.image-container');
+const imageContainers = document.querySelectorAll('.image-container');
 
-  imageContainers.forEach(container => {
-    const image = container.querySelector('img');
-    const loadingAnimation = container.querySelector('.loading-animation');
+imageContainers.forEach(container => {
+  const image = container.querySelector('img');
+  const loadingAnimation = container.querySelector('.loading-animation');
 
-    image.addEventListener('load', () => {
-      loadingAnimation.style.display = 'none';
-    });
+  image.addEventListener('load', () => {
+    loadingAnimation.style.display = 'none';
   });
+
+  image.addEventListener('error', () => {
+    // 处理加载错误的情况
+    loadingAnimation.style.display = 'none';
+    console.log('图片加载失败');
+  });
+});
 // 创建雪花
 function createSnowflake(canvas) {
   const ctx = canvas.getContext("2d");
