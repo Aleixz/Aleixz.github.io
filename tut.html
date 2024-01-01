@@ -52,7 +52,7 @@
  <div class="my-container">
     <h2>手机版YUZU教程</h2>
     <p>问题目录</p>
-<ol>
+<ol id="faq-list">
   <li><span style="color: rgb(235, 255, 0);">点击以下即可轻松找到你想要解决的问题</span></li>
   <li><a class="page-scroll translate" href="#one" style="color: white; text-decoration: underline; display: inline-block;">1.如何导入密钥？\ 游戏打不开图标中间有问号?</a></li>
   <li><a class="page-scroll translate" href="#2" style="color: white; text-decoration: underline; display: inline-block;">2.如何导入固件？\ 游戏字体全是问号或者乱码?</a></li>
@@ -102,7 +102,29 @@
 
     <script src="./js/jjss.js">
     </script>
-    
+    <script>
+  var faqList = document.getElementById("faq-list");
+  var faqItems = faqList.getElementsByTagName("li");
+
+  if (faqItems.length > 4) {
+    for (var i = 4; i < faqItems.length; i++) {
+      faqItems[i].style.display = "none";
+    }
+    faqList.innerHTML += '<li><button class="toggle-button" onclick="toggleFAQ(this)">点击展开更多问题</button></li>';
+  }
+
+  function toggleFAQ(button) {
+    var faqItems = button.parentNode.parentNode.getElementsByTagName("li");
+    for (var i = 4; i < faqItems.length; i++) {
+      if (faqItems[i].style.display === "none") {
+        faqItems[i].style.display = "list-item";
+      } else {
+        faqItems[i].style.display = "none";
+      }
+    }
+    button.classList.toggle("open");
+  }
+</script>
     <body>
       <div class="air-wall">
       </div>
