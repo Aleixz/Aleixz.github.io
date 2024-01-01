@@ -12,6 +12,9 @@
 	padding:0;
 	font-family:Arial,sans-serif;
 }
+.element {
+  transform: translate3d(0, 0, 0);
+}
 canvas#snow-canvas {
     position: fixed;
     top: 0;
