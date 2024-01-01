@@ -263,7 +263,7 @@ body::before {
 	left:0;
 	width:100%;
 	height:60px;
-	background-color:rgb(131 7 225 / 74%);
+	background-color:rgb(16 16 16 / 82%);
 	backdrop-filter:blur(8px);
 	box-shadow:0 0 10px rgba(0,0,0,0.2);
 	display:flex;
