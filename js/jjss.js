@@ -1,3 +1,13 @@
+// 加载动画
+const image = document.querySelector('.image-container img');
+  const loadingAnimation = document.querySelector('.loading-animation');
+
+  image.addEventListener('load', function() {
+    loadingAnimation.style.display = 'none';
+  });
+  if (image.complete) {
+    loadingAnimation.style.display = 'none';
+  }
 // 创建雪花
 function createSnowflake(canvas) {
   const ctx = canvas.getContext("2d");
