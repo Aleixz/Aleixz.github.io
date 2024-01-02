@@ -37,10 +37,6 @@ body {
   font-weight: bold;
   cursor: pointer;
 }
-
-.image-box {
-  position: relative;
-}
 /* 加载动画 */
 .image-container {
   position: relative;
