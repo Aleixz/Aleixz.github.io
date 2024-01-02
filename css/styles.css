@@ -7,6 +7,41 @@ body {
   padding: 0;
   font-family: Arial, sans-serif;
 }
+/* 通知框 */
+#notificationContainer {
+  position: fixed;
+  bottom: -100px;
+  right: 20px;
+  width: 300px;
+  height: 100px;
+  background-color: rgb(87 85 85 / 45%);
+  backdrop-filter: blur(7px);
+  border-radius: 5px;
+  padding: 10px;
+  display: none;
+  z-index: 112;
+  color: #ffffff;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.5;
+  font-size: 16px;
+  border: 1px solid #3f3f3f;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+#notificationContainer p {
+  margin: 0;
+}
+
+#notificationContainer .title {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+#notificationContainer .message {
+  margin-top: 5px;
+}
 /* 教程文本行高 */
 .donate {
   line-height: 1.5;
