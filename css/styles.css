@@ -7,6 +7,10 @@ body {
   padding: 0;
   font-family: Arial, sans-serif;
 }
+/* 教程文本行高 */
+.donate {
+  line-height: 1.5;
+}
 /* 图片预览 */
 .image-modal {
   display: none;
