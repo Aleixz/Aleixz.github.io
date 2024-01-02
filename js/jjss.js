@@ -1,3 +1,26 @@
+// 图片预览
+function openImage(img) {
+  var modal = document.querySelector('.image-modal');
+  var modalImg = document.getElementById('modalImage');
+
+  modal.style.display = 'block';
+  modalImg.src = img.src;
+}
+
+function closeImage() {
+  var modal = document.querySelector('.image-modal');
+  modal.style.display = 'none';
+}
+
+// 获取所有的图片元素
+var images = document.querySelectorAll('.image-box img');
+
+// 为每个图片元素添加点击事件监听器
+images.forEach(function(image) {
+  image.addEventListener('click', function() {
+    openImage(this);
+  });
+});
 // 加载动画
 const imageContainers = document.querySelectorAll('.image-container');
 
