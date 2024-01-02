@@ -3,13 +3,21 @@ function openImage(img) {
   var modal = document.querySelector('.image-modal');
   var modalImg = document.getElementById('modalImage');
 
-  modal.style.display = 'block';
   modalImg.src = img.src;
+  modal.style.display = 'block';
+
+  setTimeout(function() {
+    modal.classList.add('show');
+  }, 10);
 }
 
 function closeImage() {
   var modal = document.querySelector('.image-modal');
-  modal.style.display = 'none';
+  modal.classList.remove('show');
+
+  setTimeout(function() {
+    modal.style.display = 'none';
+  }, 300);
 }
 
 // 获取所有的图片元素
