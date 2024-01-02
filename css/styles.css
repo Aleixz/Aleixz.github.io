@@ -19,7 +19,7 @@ body {
   border-radius: 5px;
   padding: 10px;
   display: none;
-  z-index: 112;
+  z-index: 9999;
   color: #ffffff;
   font-family: Arial, sans-serif;
   font-size: 14px;
@@ -341,7 +341,7 @@ body::before {
   visibility: hidden;
   transition: transform 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55), opacity 0.5s ease-in-out;
   box-shadow: 0 2px 4px rgb(0 0 0 / 75%);
-  z-index: 9999;
+  z-index: 999;
 }
 
 .close-button {
