@@ -7,6 +7,10 @@ body {
   padding: 0;
   font-family: Arial, sans-serif;
 }
+.h1{
+    font-size: 20px;
+    color: #caff00;
+}
 /* 资料卡样式 */
 .profile-card{
   text-align: center;
