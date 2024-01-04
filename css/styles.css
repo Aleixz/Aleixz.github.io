@@ -9,15 +9,15 @@ body {
 }
 /* 资料卡样式 */
 .profile-card{
-  width: 400px;
   text-align: center;
-  border-radius: 8px;
+  border-radius: 10px;
   overflow: hidden;
 }
 
 .card-header{
   background: #2c3a47;
   padding: 60px 40px;
+  margin-top: 3px;
 }
 
 .pic{
@@ -95,40 +95,6 @@ body {
   background: #e66767;
   color: #f2f2f2;
 }
-
-/* 添加媒体查询，针对不同的屏幕尺寸进行适应性调整 */
-@media (max-width: 768px) {
-  .profile-card {
-    width: 100%;
-  }
-  
-  .card-header {
-    padding: 40px;
-  }
-  
-  .pic {
-    margin-bottom: 20px;
-  }
-  
-  .name {
-    font-size: 24px;
-  }
-  
-  .desc {
-    font-size: 16px;
-  }
-  
-  .sm {
-    margin: 10px 0;
-  }
-  
-  .contact-btn {
-    padding: 10px 30px;
-    margin-top: 10px;
-  }
-}
-
-
 /* 通知框 */
 #notificationContainer {
   position: fixed;
@@ -1004,7 +970,37 @@ p {
 a.page-scroll.translate,a.page-scroll[href="#one"],a.page-scroll[onclick="openModal()"] {
 	display:none;
 }
-}/* 对于小屏幕设备，调整部分样式 */
+}
+  .profile-card {
+    width: 100%;
+  }
+  
+  .card-header {
+    padding: 40px;
+  }
+  
+  .pic {
+    margin-bottom: 20px;
+  }
+  
+  .name {
+    font-size: 24px;
+  }
+  
+  .desc {
+    font-size: 16px;
+  }
+  
+  .sm {
+    margin: 10px 0;
+  }
+  
+  .contact-btn {
+    padding: 10px 30px;
+    margin-top: 10px;
+  }
+}
+/* 对于小屏幕设备，调整部分样式 */
 @media screen and (max-width:383px) {
 	body {
 	background-image:url("../img/background1.svg");
