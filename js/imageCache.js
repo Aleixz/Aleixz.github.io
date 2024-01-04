@@ -64,10 +64,6 @@ var imagePaths = {
     path: 'path/to/14.jpeg',
     format: 'jpeg'
   },
-  image15: {
-    path: 'path/to/15.svg',
-    format: 'svg'
-  },
   image16: {
     path: 'path/to/16.jpeg',
     format: 'jpeg'
