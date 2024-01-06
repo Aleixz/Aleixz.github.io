@@ -14,7 +14,7 @@ document.getElementById("downloadButton2").addEventListener("click", function() 
 });
 // 固件链接
 document.getElementById("downloadButton3").addEventListener("click", function() {
-  window.location.href = 'http://www.918.plus/down.php/907f7c99ba54ff84aba5dfc9e22df968.zip]Firmware 17.0.0.zip';
+  window.location.href = 'https://www.123pan.com/s/DCbbVv-1plHd.html';
 });
 // 密钥链接
 document.getElementById("downloadButton4").addEventListener("click", function() {
