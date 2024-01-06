@@ -1,4 +1,5 @@
   var websiteInfoText = `
+    <a href="disclaimer.html"><span style="color: rgb(0 109 255);;">点击查看免责声明</span></a>
     <p>须知：本站为公益网站不具备任何收费内容大家可以放心使用 建议收藏该网站以防错过每天的yuzu更新噢。</p>
     <p><span style="color: #fd00ff;">站長通知</span>1/6：由於无法支付高昂的服务器费用部分大文件下载只能改用123网盘。 </p>
     <p>网站更新1/1：移除了游戏存档页增加了详细教程页 因为没人上传存档导致存档页一直空着摆设 </p>
