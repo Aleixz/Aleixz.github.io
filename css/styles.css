@@ -209,14 +209,6 @@ body {
   transform: translate3d(0, 0, 0);
 }
 
-canvas#snow-canvas {
-  position: fixed;
-  top: 0;
-  left: 0;
-  pointer-events: none;
-  z-index: -1;
-}
-
 /* 添加滚动条样式 */
 ::-webkit-scrollbar {
   width: 8px;
