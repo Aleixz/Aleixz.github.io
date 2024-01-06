@@ -1,7 +1,8 @@
 /* 打开和关闭手风琴面板的样式 */
 .accordion {
     background-color:rgb(0 0 0 / 50%);;
-	backdrop-filter:blur(20px);
+  backdrop-filter: saturate(300%) blur(10px);
+  -webkit-backdrop-filter: saturate(300%) blur(10px);
   color: #fff;
   cursor: pointer;
   padding: 18px;
@@ -24,7 +25,8 @@
 .panel {
   border-radius: 10px;
   padding: 0 18px;
-  backdrop-filter: blur(10px);
+  backdrop-filter: saturate(140%) blur(10px);
+  -webkit-backdrop-filter: saturate(140%) blur(10px);
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.2s ease-out;
