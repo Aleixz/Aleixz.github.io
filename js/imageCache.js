@@ -1,95 +1,95 @@
 // 图片路径和格式对象
 var imagePaths = {
   background: {
-    path: 'path/to/background.svg',
+    path: 'img/background.svg',
     format: 'svg'
   },
   background1: {
-    path: 'path/to/background1.svg',
+    path: 'img/background1.svg',
     format: 'svg'
   },
   image1: {
-    path: 'path/to/1.jpeg',
+    path: 'img/1.jpeg',
     format: 'jpeg'
   },
   image2: {
-    path: 'path/to/2.jpeg',
+    path: 'img/2.jpeg',
     format: 'jpeg'
   },
   image3: {
-    path: 'path/to/3.jpeg',
+    path: 'img/3.jpeg',
     format: 'jpeg'
   },
   image4: {
-    path: 'path/to/4.jpeg',
+    path: 'img/4.jpeg',
     format: 'jpeg'
   },
   image5: {
-    path: 'path/to/5.jpeg',
+    path: 'img/5.jpeg',
     format: 'jpeg'
   },
   image6: {
-    path: 'path/to/6.jpeg',
+    path: 'img/6.jpeg',
     format: 'jpeg'
   },
   image7: {
-    path: 'path/to/7.jpeg',
+    path: 'img/7.jpeg',
     format: 'jpeg'
   },
   image8: {
-    path: 'path/to/8.jpeg',
+    path: 'img/8.jpeg',
     format: 'jpeg'
   },
   image9: {
-    path: 'path/to/9.jpeg',
+    path: 'img/9.jpeg',
     format: 'jpeg'
   },
   image10: {
-    path: 'path/to/10.jpeg',
+    path: 'img/10.jpeg',
     format: 'jpeg'
   },
   image11: {
-    path: 'path/to/11.jpeg',
+    path: 'img/11.jpeg',
     format: 'jpeg'
   },
   image12: {
-    path: 'path/to/12.jpeg',
+    path: 'img/12.jpeg',
     format: 'jpeg'
   },
   image13: {
-    path: 'path/to/13.jpeg',
+    path: 'img/13.jpeg',
     format: 'jpeg'
   },
   image14: {
-    path: 'path/to/14.jpeg',
+    path: 'img/14.jpeg',
     format: 'jpeg'
   },
     image15: {
-    path: 'path/to/15.jpeg',
+    path: 'img/15.jpeg',
     format: 'jpeg'
   },
   image16: {
-    path: 'path/to/16.jpeg',
+    path: 'img/16.jpeg',
     format: 'jpeg'
   },
   image17: {
-    path: 'path/to/17.jpeg',
+    path: 'img/17.jpeg',
     format: 'jpeg'
   },
   image18: {
-    path: 'path/to/18.jpeg',
+    path: 'img/18.jpeg',
     format: 'jpeg'
   },
   image19: {
-    path: 'path/to/19.jpeg',
+    path: 'img/19.jpeg',
     format: 'jpeg'
   },
   image20: {
-    path: 'path/to/20.jpeg',
+    path: 'img/20.jpeg',
     format: 'jpeg'
   },
   image21: {
-    path: 'path/to/21.jpeg',
+    path: 'img/21.jpeg',
     format: 'jpeg'
   }
 };
