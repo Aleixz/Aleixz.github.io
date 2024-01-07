@@ -16,10 +16,6 @@ document.getElementById("downloadButton2").addEventListener("click", function() 
 document.getElementById("downloadButton3").addEventListener("click", function() {
   window.location.href = 'https://www.123pan.com/s/DCbbVv-1plHd.html';
 });
-// 密钥链接
-document.getElementById("downloadButton4").addEventListener("click", function() {
-  redirect('https://dlink.host/lanzou/aHR0cHM6Ly93d3AubGFuem91cC5jb20vaThQWTYxaWN1dzdn.jpg');
-});
 // 888以下
 // GPU链接1
 document.getElementById("bilibiliLink1").href = "https://dlink.host/lanzou/aHR0cHM6Ly93d3AubGFuem91cC5jb20vaUtWNVAxaXE5M25nJnBhc3NDb2RlPQ.jpg";
