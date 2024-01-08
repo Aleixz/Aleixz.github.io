@@ -57,10 +57,6 @@ document.getElementById("downloadButton3").addEventListener("click", function() 
   showNotification("请稍后，您的的固件包正在开始下载...");
 });
 
-document.getElementById("downloadButton4").addEventListener("click", function() {
-  showNotification("请稍后，您的密钥正在开始下载...");
-});
-
 function showNotification(message) {
   var notificationContainer = document.getElementById("notificationContainer");
   notificationContainer.textContent = message;
