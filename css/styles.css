@@ -54,10 +54,10 @@ body {
   transform: translateY(-50%) rotate(180deg);
 }
 h1 {
-    text-align: center;
-    font-size: 28px;
-    margin-bottom: 30px;
-    color: #fff;
+  text-align: center !important;
+  font-size: 28px !important;
+  margin-bottom: 30px !important;
+  color: #fff !important;
 }
 /* 资料卡样式 */
 .profile-card{
@@ -770,11 +770,11 @@ p {
 
 hr {
   max-width: 80px;
-  border-width: 3px;
+  border-width: 3px !important;
   opacity: 0.09;
-  margin-top: 15px;
-  margin-bottom: 15px;
-  border-top: 1px solid #eee;
+  margin-top: 15px !important;
+  margin-bottom: 15px !important;
+  border-top: 1px solid #eee !important;
 }
 
 /* 空气墙样式 */
