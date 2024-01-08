@@ -1,4 +1,4 @@
-document.getElementById("date").textContent = "1/888";// 更新日期
+document.getElementById("date").textContent = "1/8";// 更新日期
 document.getElementById("date").style.color = "#41ff00";
 
 document.getElementById("version").textContent = "V186";// 更新版本号
