@@ -146,7 +146,32 @@
   <img src="img/3.jpeg" width="250" onclick="openImage(this)">
   <div class="loading-animation"></div>
   </div>
+  <li class="h1">密钥获取</li>
+  <li>由于版权原因, 本站不再提供直接密钥下载。</li>
+  <li>你可以在<a href="https://yuzu-emu.org/help/quickstart/#dumping-prodkeys-and-titlekeys" style="text-decoration: underline;"><span style="color: rgb(63 174 255);">yuzu官方教程</span>
+  </a>中学习如何从正版switch中备份keys文件.</li>
+  <li>也可以在贴吧或者 qq 群等地方找到其他大佬分享的 keys 文件.</li>
+  <li>下面是由两位大佬分享的 keys:</li>
+  <li>
+  1. 由 文无 大佬提供的 
+  <a href="https://url11.ctfile.com/d/18719411-48103523-6faacf?49760005" style="color: #00ff45;">城通网盘</a>
+  (访问密码：7257), 原帖地址: 
+  <a href="https://tieba.baidu.com/p/7799545671" style="color: #00b6ff;">百度贴吧</a>
+</li>
 </ol>
+<div class="google-accordion">
+  <div class="accordion-section">
+    <div class="accordion-header">
+      <span class="accordion-marker"></span>
+      免责声明
+    </div>
+    <div class="accordion-content">
+      <p>本文仅用于教育和研究目的，分享任天堂解密keys的目的是促进技术研究和知识共享，并不鼓励或支持侵犯任何知识产权或版权的行为。分享这些keys并不代表我们对其合法性或合规性的认可。</p>
+      <p>我们强烈建议您在遵守当地版权法律的前提下使用这些keys。请确保您获得了相关版权持有人的许可或授权，或者符合适用的法律例外。我们不承担因使用这些keys而导致的任何法律责任。</p>
+      <p>此免责声明不构成任何形式的法律意见或法律关系。您应咨询合适的法律专业人士，以获取准确的法律建议，并确保您的行为符合当地法律和法规。</p>
+    </div>
+  </div>
+</div>
       </div>
 	  <hr class="primary" id="2">
       <div class="divider"></div>
@@ -300,27 +325,44 @@
 <script src="./js/chat.js">
     </script>
  <script>
+document.addEventListener("DOMContentLoaded", function() {
+  var accordionHeaders = document.getElementsByClassName("accordion-header");
+  var i;
+
+  for (i = 0; i < accordionHeaders.length; i++) {
+    accordionHeaders[i].addEventListener("click", function() {
+      this.parentElement.classList.toggle("active");
+      var accordionContent = this.nextElementSibling;
+      if (accordionContent.style.display === "block") {
+        accordionContent.style.display = "none";
+      } else {
+        accordionContent.style.display = "block";
+      }
+    });
+  }
+
   var faqList = document.getElementById("faq-list");
   var faqItems = faqList.getElementsByTagName("li");
 
   if (faqItems.length > 4) {
-    for (var i = 4; i < faqItems.length; i++) {
+    for (i = 4; i < faqItems.length; i++) {
       faqItems[i].style.display = "none";
     }
-    faqList.innerHTML += '<li><button class="toggle-button" onclick="toggleFAQ(this)">点击展开更多问题</button></li>';
+    faqList.innerHTML += '<li><button class="toggle-button" onclick="toggleMoreFAQ(this)">点击展开更多问题</button></li>';
   }
+});
 
-  function toggleFAQ(button) {
-    var faqItems = button.parentNode.parentNode.getElementsByTagName("li");
-    for (var i = 4; i < faqItems.length; i++) {
-      if (faqItems[i].style.display === "none") {
-        faqItems[i].style.display = "list-item";
-      } else {
-        faqItems[i].style.display = "none";
-      }
+function toggleMoreFAQ(button) {
+  var faqItems = button.parentNode.parentNode.getElementsByTagName("li");
+  for (var i = 4; i < faqItems.length; i++) {
+    if (faqItems[i].style.display === "none") {
+      faqItems[i].style.display = "list-item";
+    } else {
+      faqItems[i].style.display = "none";
     }
-    button.classList.toggle("open");
   }
+  button.classList.toggle("open");
+}
 </script>
     <body>
       <div class="air-wall">
