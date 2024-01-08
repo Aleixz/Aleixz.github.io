@@ -1,25 +1,20 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-        xmlns:bing="http://www.bing.com/schemas/sitemap/1.0">
-  <url>
-    <loc>https://aleixz.github.io/index.html</loc>
-    <lastmod>2024-08-01</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>1.0</priority>
-    <bing:mobile:mobile/>
-  </url>
-  <url>
-    <loc>https://aleixz.github.io/tut.html</loc>
-    <lastmod>2024-08-01</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-    <bing:mobile:mobile/>
-  </url>
+<?xml version="1.0" encoding="utf-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+  <!-- Created By http://www.zhetao.com/sitemapcreator,  URLs: 5 Generated at: 2024-01-03 17:00:17 -->
+
   <url>
     <loc>https://aleixz.github.io/hisv.html</loc>
-    <lastmod>2024-08-01</lastmod>
-    <changefreq>monthly</changefreq>
     <priority>0.8</priority>
-    <bing:mobile:mobile/>
   </url>
+
+  <url>
+    <loc>https://aleixz.github.io/tut.html</loc>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://aleixz.github.io/index.html</loc>
+    <priority>1.00</priority>
+  </url>
+
 </urlset>
