@@ -53,9 +53,11 @@ body {
 .accordion-section.active .accordion-marker {
   transform: translateY(-50%) rotate(180deg);
 }
-.h1{
-    font-size: 20px;
-    color: #caff00;
+h1 {
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 30px;
+    color: #fff;
 }
 /* 资料卡样式 */
 .profile-card{
@@ -822,7 +824,6 @@ hr {
 }
 /* 第二页 */
 a,
-h1,
 h4,
 header,
 i,
