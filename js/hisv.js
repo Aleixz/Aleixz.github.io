@@ -1,5 +1,6 @@
   var panelHTML = `
     <p class="special-p"><span style="color: #dcff00;">点击以下任意版本开始下载</span></p>
+<a class="w3-button w3-block w3-left-align" href="https://dlink.host/lanzou/aHR0cHM6Ly93d3AubGFuem91cC5jb20vaVFNTTMxa2Y5dmNqJnBhc3NDb2RlPWdsYmQ.jpg">v186</a>
     <a class="w3-button w3-block w3-left-align" href="https://dlink.host/lanzou/aHR0cHM6Ly93d3AubGFuem91cC5jb20vaVNXOVQxa2JybHZjJnBhc3NDb2RlPWJxb2I.jpg">v185</a>
     <a class="w3-button w3-block w3-left-align" href="https://dlink.host/lanzou/aHR0cHM6Ly93d3lyLmxhbnpvdXUuY29tL2lMeGZnMWs3cjVwZyZwYXNzQ29kZT1kYm8y.jpg">v184</a>
     <a class="w3-button w3-block w3-left-align" href="https://dlink.host/lanzou/aHR0cHM6Ly93d3AubGFuem91cC5jb20vaTVNNFMxazNkMTBqJnBhc3NDb2RlPWR4b3c.jpg">v183</a>
