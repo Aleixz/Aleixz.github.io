@@ -7,6 +7,52 @@ body {
   padding: 0;
   font-family: Arial, sans-serif;
 }
+/* 手风琴 */
+.google-accordion {
+  width: 100%;
+}
+
+.accordion-section {
+  border-bottom: 1px solid #ffffff;
+}
+
+.accordion-header {
+  position: relative;
+  padding: 16px;
+  cursor: pointer;
+  background-color: #202124;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.accordion-marker {
+  position: absolute;
+  top: 50%;
+  right: 16px;
+  transform: translateY(-50%);
+  width: 10px;
+  height: 10px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  transition: transform 0.3s ease-in-out;
+}
+
+.accordion-content {
+  padding: 16px;
+  display: none;
+  background-color: #181818;
+  color: #ffffff;
+  font-size: 14px;
+}
+
+.accordion-section.active .accordion-content {
+  display: block;
+}
+
+.accordion-section.active .accordion-marker {
+  transform: translateY(-50%) rotate(180deg);
+}
 .h1{
     font-size: 20px;
     color: #caff00;
