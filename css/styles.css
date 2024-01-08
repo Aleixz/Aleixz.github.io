@@ -941,12 +941,12 @@ main {
   padding: 10px 0 25px;
 }
 
-.app-meta h1 {
+.app-meta h4 {
   font-size: 16px;
   color: #aadada;
 }
 
-.app-meta h1 i {
+.app-meta h4 i {
   font-size: 16px;
   color: #06f;
   margin: 0 5px 0 0;
@@ -977,7 +977,7 @@ main {
   overflow: hidden;
 }
 
-.app-item h1 {
+.app-item h4 {
   width: calc(100% - 56px);
   font-size: 14px;
   font-weight: bold;
