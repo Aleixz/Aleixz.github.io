@@ -45,8 +45,8 @@ imageContainers.forEach(container => {
   }
 });
 // 下载通知
-document.getElementById("downloadButton1").addEventListener("click", function() {
-  showNotification("请稍后，您的的每日版yuzu正在开始下载...");
+document.getElementById("downloadButton").addEventListener("click", function() {
+  showNotification("请稍后，您的的每日版yuzu正在开始下载...（如未开始下载请检查网站是否已经获取到了版本号）");
 });
 
 document.getElementById("downloadButton2").addEventListener("click", function() {
