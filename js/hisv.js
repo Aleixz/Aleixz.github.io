@@ -49,9 +49,11 @@ fetch('https://api.github.com/repos/yuzu-emu/yuzu-android/releases?per_page=35',
 .then(response => response.json())
 .then(data => {
   const releases = data.slice(0, 35).map(release => {
+    // 查找名为"yuzu-*.apk"的附件，并获取对应的下载链接
+    const apkAsset = release.assets.find(asset => asset.name.endsWith('.apk'));
     return {
       tag: release.tag_name,
-      downloadUrl: release.assets[0].browser_download_url
+      downloadUrl: apkAsset ? apkAsset.browser_download_url : null
     };
   });
 
@@ -83,3 +85,11 @@ fetch('https://api.github.com/repos/yuzu-emu/yuzu-android/releases?per_page=35',
 
 window.addEventListener('load', displayReleases);
 
+document.getElementById('releasesList').addEventListener('click', function(event) {
+  if (event.target.tagName === 'A') {
+    event.preventDefault();
+    const actualDownloadUrl = event.target.href.replace('https://github.com/', 'https://download.fgit.cf/');
+    event.target.href = actualDownloadUrl;
+    window.open(actualDownloadUrl, '_blank');
+  }
+});
