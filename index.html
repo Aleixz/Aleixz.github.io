@@ -68,8 +68,8 @@
 <div class="content-box" onclick="showSecondaryPage(1)">
   <h2>每日更新版</h2>
   <img src="./favicon.ico" width="60" height="60">
-<p id="updateInfo" class="firmware-info">更新日期<span id="date"></span>版本号<span id="version"></span></p>
-  <p class="description">每天早上9点更新</p>
+  <p class="firmware-info">最新版本：<span id="loadingVersion">加载中...</span><span id="actualVersion" style="display: none;"></span></p>
+  <div class="publishDate" id="publishDate">更新日期获取中...</div>
 </div>
 <!-- 二级页面1 -->
 <div class="secondary-page" id="secondaryPage1">
@@ -78,7 +78,7 @@
   <img src="img/path_to_image.jpg" width="200" height="200" class="centered-image">
   <p>支付宝扫码请UP主喝奶茶</p>
   <p>网站开发与维护不易，给个三联或者捐赠请我喝杯奶茶，谢谢！</p>
-  <button class="button" id="downloadButton1">立刻下载</button>
+  <button class="button" id="downloadButton" href="#" download>立刻下载</button>
   <button class="button" onclick="window.location.href='https://space.bilibili.com/68110291'">关注UP</button>
 </div>
 
@@ -246,6 +246,8 @@
  </div>
  </div>
     </main>
+    <script src="./js/dl.js">
+    </script>
     <script src="./js/notice.js" async>
     </script>
     <script src="./js/jjss.js">
