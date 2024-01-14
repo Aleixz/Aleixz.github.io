@@ -1,45 +1,3 @@
-  var panelHTML = `
-    <p class="special-p"><span style="color: #dcff00;">点击以下任意版本开始下载</span></p>
-<a class="w3-button w3-block w3-left-align" href="https://dlink.host/lanzou/aHR0cHM6Ly93d3AubGFuem91cC5jb20vaUIzOFAxbDIybXZhJnBhc3NDb2RlPTYybWE.jpg">v192</a>
-<a class="w3-button w3-block w3-left-align" href="https://dlink.host/lanzou/aHR0cHM6Ly93d3AubGFuem91cC5jb20vaU9WV1cxa3lmdmlmJnBhc3NDb2RlPWM4bXA.jpg">v191</a>
-<a class="w3-button w3-block w3-left-align" href="https://dlink.host/lanzou/aHR0cHM6Ly93d3AubGFuem91cC5jb20vaTBGMUkxa3ZjcmZjJnBhc3NDb2RlPWd6MGY.jpg">v190</a>
-<a class="w3-button w3-block w3-left-align" href="https://dlink.host/lanzou/aHR0cHM6Ly93d3AubGFuem91cC5jb20vaUNDN0Ixa3MyZ29oJnBhc3NDb2RlPTh0M20.jpg">v189</a>
-<a class="w3-button w3-block w3-left-align" href="https://dlink.host/lanzou/aHR0cHM6Ly93d3AubGFuem91cC5jb20vaVpYR04xa282d3RpJnBhc3NDb2RlPWJtaHQ.jpg">v188</a>
-<a class="w3-button w3-block w3-left-align" href="https://dlink.host/lanzou/aHR0cHM6Ly93d3AubGFuem91cC5jb20vaTlTM1Axa2pscXppJnBhc3NDb2RlPWd3bWM.jpg">v187</a>
-<a class="w3-button w3-block w3-left-align" href="https://dlink.host/lanzou/aHR0cHM6Ly93d3AubGFuem91cC5jb20vaVZCQzcxa2dlbTFhJnBhc3NDb2RlPWJpMmI.jpg">v186</a>
-    <a class="w3-button w3-block w3-left-align" href="https://dlink.host/lanzou/aHR0cHM6Ly93d3AubGFuem91cC5jb20vaVNXOVQxa2JybHZjJnBhc3NDb2RlPWJxb2I.jpg">v185</a>
-    <a class="w3-button w3-block w3-left-align" href="https://dlink.host/lanzou/aHR0cHM6Ly93d3lyLmxhbnpvdXUuY29tL2lMeGZnMWs3cjVwZyZwYXNzQ29kZT1kYm8y.jpg">v184</a>
-    <a class="w3-button w3-block w3-left-align" href="https://dlink.host/lanzou/aHR0cHM6Ly93d3AubGFuem91cC5jb20vaTVNNFMxazNkMTBqJnBhc3NDb2RlPWR4b3c.jpg">v183</a>
-    <a class="w3-button w3-block w3-left-align" href="https://dlink.host/lanzou/aHR0cHM6Ly93d3AubGFuem91cC5jb20vaTJLSzkxazJzemhlJnBhc3NDb2RlPTh6ZXU.jpg">v182</a>
-    <a class="w3-button w3-block w3-left-align" href="https://dlink.host/lanzou/aHR0cHM6Ly93d3AubGFuem91cC5jb20vaUU1TVMxanlzYzJoJnBhc3NDb2RlPTl4emg.jpg">v181</a>
-    <a class="w3-button w3-block w3-left-align" href="https://dlink.host/lanzou/aHR0cHM6Ly93d3AubGFuem91cC5jb20vaTE5Qlcxam9oeWJjJnBhc3NDb2RlPWJkcXc.jpg">v179</a>
-    <a class="w3-button w3-block w3-left-align" href="https://dlink.host/lanzou/aHR0cHM6Ly93d3AubGFuem91cC5jb20vaUdOSjUxampsZzJqJnBhc3NDb2RlPWh4c2Q.jpg">v178</a>
-    <a class="w3-button w3-block w3-left-align" href="https://dlink.host/lanzou/aHR0cHM6Ly93d3AubGFuem91cC5jb20vaUxRTDAxamcxNXZlJnBhc3NDb2RlPTUzdG4.jpg">v177</a>
-    <a class="w3-button w3-block w3-left-align" href="https://dlink.host/lanzou/aHR0cHM6Ly93d3lyLmxhbnpvdXUuY29tL2lxVXkzMWpkZGs0YiZwYXNzQ29kZT1oZnly.jpg">v176</a>
-    <a class="w3-button w3-block w3-left-align" href="https://dlink.host/lanzou/aHR0cHM6Ly93d3AubGFuem91cC5jb20vaVNGRjgxajlwc2ZpJnBhc3NDb2RlPWJ1MnQ.jpg">v175</a>
-    <a class="w3-button w3-block w3-left-align" href="https://dlink.host/lanzou/aHR0cHM6Ly93d3AubGFuem91cC5jb20vaVdMUDAxajZkazhkJnBhc3NDb2RlPTdwOHM.jpg">v174</a>
-    <a class="w3-button w3-block w3-left-align" href="https://dlink.host/lanzou/aHR0cHM6Ly93d3AubGFuem91cC5jb20vaTNJWTkxajJsNWhnJnBhc3NDb2RlPTNmMmc.jpg">v173</a>
-    <a class="w3-button w3-block w3-left-align" href="https://dlink.host/lanzou/aHR0cHM6Ly93d3lyLmxhbnpvdXUuY29tL2lqU01vMWowNXBnaCZwYXNzQ29kZT04djI4.jpg">v172</a>
-    <a class="w3-button w3-block w3-left-align" href="https://dlink.host/lanzou/aHR0cHM6Ly93d3lyLmxhbnpvdXUuY29tL2lWWU02MWl3a28wYiZwYXNzQ29kZT04amlw.jpg">v171</a>
-		<a class="w3-button w3-block w3-left-align" href="https://dlink.host/lanzou/aHR0cHM6Ly93d3AubGFuem91cC5jb20vaUs1NUExaXQwaW5hJnBhc3NDb2RlPTRldjA.jpg">v170</a>
-    <a class="w3-button w3-block w3-left-align" href="https://dlink.host/lanzou/aHR0cHM6Ly93d3AubGFuem91cC5jb20vaUEyN0MxaXBvOHpjJnBhc3NDb2RlPTNjdXU.jpg">v169</a>
-    <a class="w3-button w3-block w3-left-align" href="https://dlink.host/lanzou/aHR0cHM6Ly93d3lyLmxhbnpvdXUuY29tL2kzUmhoMWluOWhkYyZwYXNzQ29kZT03ejlu.jpg">v168</a>
-    <a class="w3-button w3-block w3-left-align" href="https://dlink.host/lanzou/aHR0cHM6Ly93d3AubGFuem91cC5jb20vaUtZWkcxaWsybjdjJnBhc3NDb2RlPTh3dXA.jpg">v167</a>
-    <a class="w3-button w3-block w3-left-align" href="https://dlink.host/lanzou/aHR0cHM6Ly93d3AubGFuem91cC5jb20vaTJISE4xaWgzbHNqJnBhc3NDb2RlPWI1a3o.jpg">v166</a>
-    <a class="w3-button w3-block w3-left-align" href="https://dlink.host/lanzou/aHR0cHM6Ly93d3lyLmxhbnpvdXUuY29tL2laMzY3MWlkeHR4aSZwYXNzQ29kZT01d3h4.jpg">v165</a>
-    <a class="w3-button w3-block w3-left-align" href="https://dlink.host/lanzou/aHR0cHM6Ly93d3lyLmxhbnpvdXUuY29tL2k2NjNWMWljbjltYiZwYXNzQ29kZT03NmJu.jpg">v164</a>
-    <a class="w3-button w3-block w3-left-align" href="https://dlink.host/lanzou/aHR0cHM6Ly93d3lyLmxhbnpvdXUuY29tL2lURklFMWlqYTE2YiZwYXNzQ29kZT0za3Rn.jpg">v163</a>
-    <a class="w3-button w3-block w3-left-align" href="https://dlink.host/lanzou/aHR0cHM6Ly93d3lyLmxhbnpvdXUuY29tL2lMWFY2MWlqYTVtYiZwYXNzQ29kZT1lbGI2.jpg">v162</a>
-    <a class="w3-button w3-block w3-left-align" href="https://dlink.host/lanzou/aHR0cHM6Ly93d3lyLmxhbnpvdXUuY29tL2lXMjExMWlqYTRyYSZwYXNzQ29kZT04NThu.jpg">v161</a>
-    <a class="w3-button w3-block w3-left-align" href="https://dlink.host/lanzou/aHR0cHM6Ly93d3lyLmxhbnpvdXUuY29tL2lDMllZMWlqYTV2YSZwYXNzQ29kZT1icWJr.jpg">v160</a>
-  `;
-
-  // 获取 panel 元素
-  var panelElement = document.querySelector('.panel');
-
-  // 插入生成的 HTML 代码
-  panelElement.innerHTML = panelHTML;
-
 var acc = document.getElementsByClassName("accordion");
 var i;
 
@@ -75,4 +33,53 @@ if (typeof Object.assign !== 'function') {
     return target;
   };
 }
+
+function displayReleases() {
+  const releasesList = document.getElementById('releasesList');
+  const loadingStatus = document.getElementById('loadingStatus');
+  const accordions = document.getElementsByClassName('accordion');
+
+fetch('https://api.github.com/repos/yuzu-emu/yuzu-android/releases?per_page=35', {
+  headers: {
+    'X-GitHub-Api-Version': '2022-11-28',
+    'Accept': 'application/vnd.github+json',
+    'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64; rv:121.0) Gecko/20100101 Firefox/121.0'
+  }
+})
+.then(response => response.json())
+.then(data => {
+  const releases = data.slice(0, 35).map(release => {
+    return {
+      tag: release.tag_name,
+      downloadUrl: release.assets[0].browser_download_url
+    };
+  });
+
+    releases.forEach(release => {
+      const listItem = document.createElement('li');
+      const link = document.createElement('a');
+      link.href = release.downloadUrl;
+      link.textContent = release.tag;
+      listItem.appendChild(link);
+      releasesList.appendChild(listItem);
+    });
+
+    // 隐藏加载状态
+    loadingStatus.style.display = 'none';
+
+    // 手动触发刷新手风琴状态
+    Array.from(accordions).forEach(accordion => {
+      if (accordion.classList.contains('active')) {
+        accordion.nextElementSibling.style.maxHeight = accordion.nextElementSibling.scrollHeight + "px";
+      } else {
+        accordion.nextElementSibling.style.maxHeight = null;
+      }
+    });
+  })
+  .catch(error => {
+    console.error('Error:', error);
+  });
+}
+
+window.addEventListener('load', displayReleases);
 
