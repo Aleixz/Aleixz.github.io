@@ -7,6 +7,10 @@ body {
   padding: 0;
   font-family: Arial, sans-serif;
 }
+/* 日期颜色 */
+.date {
+      color: rgb(235, 255, 0);
+    }
 /* 教程小节高亮 */
 .list-item {
     font-size: 20px;
