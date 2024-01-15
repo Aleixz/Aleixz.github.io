@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0">
+    <meta property="og:image" content="https://aleixz.github.io/img/path_to_icon2.jpg">
+    <meta name="language" content="zh-CN">
+    <meta http-equiv="Content-Language" content="zh-CN">
+    <meta name="keywords" content="NS, Switch游戏主机, 存档下载, Switch模拟器存档, yuzu安卓版, Switch游戏存档, ns游戏存档, ns存档下载">
+    <meta name="description" content="Switch游戏存档下载 - 全网最好用的NS游戏存档下载网站无需注册无需网盘直接下载导入就能玩！">
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
+    <title>YUZU游戏存档下载 - 最好用的NS游戏存档下载站</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  
+  <body>
+    <div id="mySidepanel" class="sidepanel">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+      <a href="./index.html">返回主页</a>
+      <a onclick="openModal()">赞赏</a>
+    </div>
+    <!-- 导航栏 -->
+    <nav class="navbar">
+      <a href="#" class="navbar-logo">
+        <span style="color: #0097ff;">YU</span><span style="color: red;">ZU</span>资源整合站</a>
+      <ul class="navbar-nav">
+        <button id="navbar-toggle" type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-navbar" aria-expanded="false" onclick="openNav()">
+          <span class="sr-only">
+          </span>
+          <span class="icon-bar">
+          </span>
+          <span class="icon-bar">
+          </span>
+          <span class="icon-bar">
+          </span>
+        </button>
+        <a class="page-scroll translate" href="./index.html">返回主页</a>
+        <a class="page-scroll" onclick="openModal()">赞赏</a>
+      </ul>
+    </nav>
+    <!-- 捐赠模态框 -->
+    <div class="modal" id="modal">
+      <div class="modal-content">
+        <h2>请站长喝奶茶</h2>
+        <img src="img/path_to_image.jpg" width="250" height="250" alt="二维码图片">
+        <p>支付宝扫码</p>
+        <p>您的捐赠将是鼓励我持续维护更新的动力。</p>
+        <!-- OK按钮 -->
+        <button class="modal-button" onclick="closeModal()">OK</button>
+        <!-- 关闭按钮 -->
+      </div>
+    </div>
+	  <!-- 图片预览框 -->
+   <div class="image-modal" onclick="closeImage()">
+  <img class="modal-content" id="modalImage" onclick="event.stopPropagation()">
+  <span class="close" onclick="closeImage()">&times;</span>
+</div>
+   <!-- 标题 -->	
+ <div class="my-container">
+    <h1>NS游戏存档</h1>
+	<p>点击下方按钮进入教程页查看详细的存档图文教程 另外如果你想分享存档也可以点击下方分享按钮存档然后把你的存档发给站长审核没问题即可上架您的存档</p>
+	<div class="button-container">
+	 <button class="button" id="downloadButton" onclick="window.location.href='./tut.html#7'">导入教程</button>
+	 <button class="button" id="downloadButton" onclick="document.getElementById('button').click()">分享存档</button>
+	 </div>
+<table id="customers">
+	<tr>
+		<th>游戏名称</th>
+		<th>描述</th>
+		<th>下载</th>
+	</tr>
+</table>
+
+ <div class="profile-card">
+ <div class="card-header">
+ <div class="pic">
+ <img src="img/pic.jpg" alt="">
+ </div>
+ <div class="name">蛋鐵君</div>
+ <div class="desc">如果喜欢我的网站快来B站关注我吧！</div>
+ <a href="https://space.bilibili.com/68110291" class="contact-btn">点击关注UP</a>
+ </div>
+ </div>
+</div>
+<script src="./js/save.js">
+    </script>
+    <script src="./js/jjss.js">
+    </script>
+    <body>
+      <div class="air-wall">
+      </div>
+      <footer class="footer">
+        <div class="copyright">&copy; 2023 Aleixz. All rights reserved. 本网站仅供学习目的，不涉及任何商业行为。</div>
+        <div class="qr-code">
+          <a href="https://space.bilibili.com/68110291" target="_blank">
+            <div class="qr-code-text">点击关注UP</div>
+            <img src="img/eff71e52af653a70e0d857b300d3c6b69c388edb.png" alt="QR Code">
+          </a>
+        </div>
+      </footer>
+    </body>
+
+</html>
