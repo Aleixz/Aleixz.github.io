@@ -35,9 +35,19 @@ background: rgba(0, 0, 0, 0.8);
 }
 /* Google按钮样式 */
 .google-btn {
- background-color: #4285F4;
+background-color: #4285F4;
+padding: 10px 30px;
+margin-top: 10px;
+color: #fff;
+margin: 10px;
+display: inline-block;
+border: 1px solid #566ee3;
+border-radius: 6px;
 }
-
+.contact-btn1:hover{
+background: #264c8b;
+color: #f2f2f2;
+}
  /* 关闭按钮样式 */
 .close1 {
  position: absolute;
@@ -1085,7 +1095,6 @@ main {
 }
 /* 对于小屏幕设备，调整部分样式 */
 @media screen and (max-width:582px) {
-}
  /* 存档模态框 */
 .my-custom-modal {
  width: 90%;
