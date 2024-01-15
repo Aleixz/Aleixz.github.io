@@ -63,7 +63,7 @@
 	<p>点击下方按钮进入教程页查看详细的存档图文教程 另外如果你想分享存档也可以点击下方分享按钮存档然后把你的存档发给站长审核没问题即可上架您的存档</p>
 	<div class="button-container">
 	 <button class="button" id="downloadButton" onclick="window.location.href='./tut.html#7'">导入教程</button>
-	 <button class="button" id="downloadButton" onclick="document.getElementById('button').click()">分享存档</button>
+	 <button class="button" id="downloadButton" onclick="handleButtonClick()">分享存档</button>
 	 </div>
 <table id="customers">
 	<tr>
@@ -90,6 +90,12 @@
     </script>
     <script src="./js/chat.js">
     </script>
+	  <script>
+  function handleButtonClick() {
+    // 在这里添加你想要执行的点击事件的代码
+    alert("选择存档文件");
+  }
+</script>
 	      <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-TNM6VLRK0K"></script>
 <script>
