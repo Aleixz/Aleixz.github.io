@@ -11,7 +11,6 @@ body {
 .custom-modal {
  display: none;
  position: fixed;
- width: 90%;
  top: 50%;
  left: 50%;
  transform: translate(-50%, -50%);
@@ -1086,6 +1085,11 @@ main {
 }
 /* 对于小屏幕设备，调整部分样式 */
 @media screen and (max-width:582px) {
+}
+ /* 存档模态框 */
+.custom-modal {
+ width: 90%;
+ }
 .publishDate {
 font-size: 20px;
 margin-top: 5px;
