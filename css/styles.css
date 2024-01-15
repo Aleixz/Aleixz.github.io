@@ -8,7 +8,7 @@ body {
   font-family: Arial, sans-serif;
 }
  /* 存档模态框 */
-.custom-modal {
+.my-custom-modal {
  display: none;
  position: fixed;
  top: 50%;
@@ -1087,7 +1087,7 @@ main {
 @media screen and (max-width:582px) {
 }
  /* 存档模态框 */
-.custom-modal {
+.my-custom-modal {
  width: 90%;
  }
 .publishDate {
