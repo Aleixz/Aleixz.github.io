@@ -62,8 +62,19 @@
     <h1>NS游戏存档</h1>
 	<p>点击下方按钮进入教程页查看详细的存档图文教程 另外如果你想分享存档也可以点击下方分享按钮存档然后把你的存档发给站长审核没问题即可上架您的存档</p>
 	<div class="button-container">
-	 <button class="button" id="downloadButton" onclick="window.location.href='./tut.html#7'">导入教程</button>
-	 <button class="button" id="downloadButton" onclick="handleButtonClick()">分享存档</button>
+	 <button class="button" onclick="window.location.href='./tut.html#7'">导入教程</button>
+	 <!-- 添加黑色半透明遮罩 -->
+<div class="overlay" id="overlay"></div>
+
+<!-- 触发模态框的按钮 -->
+<button class="button" id="downloadButton">分享存档</button>
+
+<!-- 修改模态框的类名 -->
+<div id="customModal" class="custom-modal">
+    <span class="close" onclick="closeCustomModal()">&times;</span>
+    <h2><span style="color: rgb(91 91 91);">请把您的存档上传到网盘然后把分享链接私信给站长即可</span></h2>
+    <a href="https://space.bilibili.com/68110291" class="button google-btn contact-btn">前往发送</a>
+</div>
 	 </div>
 <table id="customers">
 	<tr>
@@ -84,6 +95,30 @@
  </div>
  </div>
 </div>
+	  <script>
+    // 获取按钮、模态框和遮罩
+    var btn = document.getElementById("downloadButton");
+    var customModal = document.getElementById("customModal");
+    var overlay = document.getElementById("overlay");
+
+    // 点击按钮时显示模态框和遮罩
+    btn.onclick = function() {
+        customModal.style.display = "block";
+        overlay.style.display = "block";
+    }
+
+    // 关闭模态框的函数
+    function closeCustomModal() {
+        customModal.style.display = "none";
+        overlay.style.display = "none";
+    }
+
+    // 当用户点击遮罩时，关闭模态框和遮罩
+    overlay.onclick = function() {
+        customModal.style.display = "none";
+        overlay.style.display = "none";
+    }
+</script>
 <script src="./js/save.js">
     </script>
     <script src="./js/jjss.js">
