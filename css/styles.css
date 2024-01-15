@@ -7,6 +7,47 @@ body {
   padding: 0;
   font-family: Arial, sans-serif;
 }
+/* 列表样式 */
+.button-container {
+  display: flex;
+  justify-content: center;
+      margin: 0 auto 10px;
+}
+
+#customers {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#customers td, #customers th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#customers tr:nth-child(even){
+  background-color: #241337;
+}
+
+#customers tr:hover {
+  background-color: #927eb96b;
+}
+
+#customers th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #af4ca7;
+  color: white;
+}
+#customers th:nth-child(1),
+#customers td:nth-child(1) {
+  width: 220px; /* 设置下载列的宽度为较窄 */
+}
+#customers th:nth-child(3),
+#customers td:nth-child(3) {
+  width: 85px; /* 设置下载列的宽度为较窄 */
+}
 /* 日期颜色 */
 .date {
       color: rgb(235, 255, 0);
