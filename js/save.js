@@ -1,6 +1,6 @@
 // 存档名称链接：
 var gameData = [
-  { name: "塞尔达传说：荒野之息", description: "100%通关存档", downloadLink: "https://www.w3school.com.cn/css/css_table.asp" },
+  { name: "塞尔达传说：荒野之息", description: "100%通关存档", downloadLink: "https://dlink.host/lanzou/aHR0cHM6Ly93d3AubGFuem91cC5jb20vaU5KTEMxbDdvZ25p.jpg" },
   { name: "等待上传。。。", description: "描述2", downloadLink: "0.0" },
 ];
 
