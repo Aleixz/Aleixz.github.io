@@ -145,7 +145,7 @@ function closeDonateModal() {
 
         // 设置下载按钮的点击事件
         document.getElementById('downloadButton').addEventListener('click', function() {
-          const actualDownloadUrl = downloadUrl.replace('https://kkgithub.com/', 'https://download.fgit.cf/');
+          const actualDownloadUrl = downloadUrl.replace('https://github.com/', 'https://download.fgit.cf/');
           window.location.href = actualDownloadUrl;
         });
       })
@@ -232,7 +232,7 @@ function closeDonateModal() {
     document.getElementById('releasesList').addEventListener('click', function (event) {
         if (event.target.tagName === 'A') {
             event.preventDefault();
-            const actualDownloadUrl = event.target.href.replace('https://kkgithub.com/', 'https://download.fgit.cf/');
+            const actualDownloadUrl = event.target.href.replace('https://github.com/', 'https://download.fgit.cf/');
             event.target.href = actualDownloadUrl;
             window.open(actualDownloadUrl, '_blank');
         }
