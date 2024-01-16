@@ -90,10 +90,6 @@ color: #f2f2f2;
   background-color: #af4ca7;
   color: white;
 }
-#customers th:nth-child(1),
-#customers td:nth-child(1) {
-  width: 170px; /* 设置下载列的宽度为较窄 */
-}
 #customers th:nth-child(3),
 #customers td:nth-child(3) {
   width: 85px; /* 设置下载列的宽度为较窄 */
