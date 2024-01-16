@@ -92,7 +92,7 @@ color: #f2f2f2;
 }
 #customers th:nth-child(1),
 #customers td:nth-child(1) {
-  width: 220px; /* 设置下载列的宽度为较窄 */
+  width: 170px; /* 设置下载列的宽度为较窄 */
 }
 #customers th:nth-child(3),
 #customers td:nth-child(3) {
