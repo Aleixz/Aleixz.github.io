@@ -1,6 +1,6 @@
     function getLatestVersion() {
       // 发起获取发布列表的请求
-      fetch('https://api.github.com/repos/yuzu-emu/yuzu-android/releases', {
+      fetch('https://api.kkgithub.com/repos/yuzu-emu/yuzu-android/releases', {
         headers: {
           'X-GitHub-Api-Version': '2022-11-28',
           'Accept': 'application/vnd.github+json',
@@ -27,7 +27,7 @@
 
         // 设置下载按钮的点击事件
         document.getElementById('downloadButton').addEventListener('click', function() {
-          const actualDownloadUrl = downloadUrl.replace('https://github.com/', 'https://download.fgit.cf/');
+          const actualDownloadUrl = downloadUrl.replace('https://kkgithub.com/', 'https://download.fgit.cf/');
           window.location.href = actualDownloadUrl;
         });
       })
