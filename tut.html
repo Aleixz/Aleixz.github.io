@@ -358,6 +358,17 @@
  </div>
  </div>
 </div>
+<script>
+    function navigateToSection(sectionId) {
+        window.onload = function () {
+            var sectionElement = document.querySelector(sectionId);
+            if (sectionElement) {
+                sectionElement.scrollIntoView({ behavior: 'smooth' });
+            }
+        };
+        window.location.href = './tut.html' + sectionId;
+    }
+</script>
     <script src="./js/jjss.js">
     </script>
     <script src="./js/imageCache.js">
