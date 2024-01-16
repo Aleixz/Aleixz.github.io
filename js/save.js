@@ -2,6 +2,7 @@
 var gameData = [
   { name: "塞尔达传说：荒野之息", description: "100%通关存档", downloadLink: "https://dlink.host/lanzou/aHR0cHM6Ly93d3AubGFuem91cC5jb20vaU5KTEMxbDdvZ25p.jpg" },
   { name: "死或生：沙滩排球3", description: "100%存档", downloadLink: "https://dlink.host/lanzou/aHR0cHM6Ly93d3AubGFuem91cC5jb20vaUZMUEQxbDhuMndk.jpg" },
+{ name: "火影忍者：究极风暴羁绊", description: "100%存档", downloadLink: "https://dlink.host/lanzou/aHR0cHM6Ly93d3AubGFuem91cC5jb20vaUtBRVMxbDhvZWhn.jpg" },
 ];
 
 // 获取表格元素
