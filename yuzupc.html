@@ -118,7 +118,7 @@ function closeDonateModal() {
 <script>
     function getLatestVersion() {
       // 发起获取发布列表的请求
-      fetch('https://api.github.com/repos/pineappleEA/pineapple-src/releases', {
+      fetch('https://api.kkgithub.com/repos/pineappleEA/pineapple-src/releases', {
         headers: {
           'X-GitHub-Api-Version': '2022-11-28',
           'Accept': 'application/vnd.github+json',
@@ -145,7 +145,7 @@ function closeDonateModal() {
 
         // 设置下载按钮的点击事件
         document.getElementById('downloadButton').addEventListener('click', function() {
-          const actualDownloadUrl = downloadUrl.replace('https://github.com/', 'https://download.fgit.cf/');
+          const actualDownloadUrl = downloadUrl.replace('https://kkgithub.com/', 'https://download.fgit.cf/');
           window.location.href = actualDownloadUrl;
         });
       })
@@ -181,7 +181,7 @@ function closeDonateModal() {
         const loadingStatus = document.getElementById('loadingStatus');
         const accordions = document.getElementsByClassName('accordion');
 
-        fetch('https://api.github.com/repos/pineappleEA/pineapple-src/releases?per_page=35', {
+        fetch('https://api.kkgithub.com/repos/pineappleEA/pineapple-src/releases?per_page=35', {
             headers: {
                 'X-GitHub-Api-Version': '2022-11-28',
                 'Accept': 'application/vnd.github+json',
@@ -232,7 +232,7 @@ function closeDonateModal() {
     document.getElementById('releasesList').addEventListener('click', function (event) {
         if (event.target.tagName === 'A') {
             event.preventDefault();
-            const actualDownloadUrl = event.target.href.replace('https://github.com/', 'https://download.fgit.cf/');
+            const actualDownloadUrl = event.target.href.replace('https://kkgithub.com/', 'https://download.fgit.cf/');
             event.target.href = actualDownloadUrl;
             window.open(actualDownloadUrl, '_blank');
         }
