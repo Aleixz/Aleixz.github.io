@@ -255,7 +255,7 @@ h1 {
   border-radius: 5px;
   padding: 10px;
   display: none;
-  z-index: 99999;
+  z-index: 9999999999 !important;
   color: #ffffff;
   font-family: Arial, sans-serif;
   font-size: 14px;
