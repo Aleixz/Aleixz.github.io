@@ -39,7 +39,7 @@ function displayReleases() {
   const loadingStatus = document.getElementById('loadingStatus');
   const accordions = document.getElementsByClassName('accordion');
 
-fetch('https://api.kkgithub.com/repos/yuzu-emu/yuzu-android/releases?per_page=35', {
+fetch('https://api.github.com/repos/yuzu-emu/yuzu-android/releases?per_page=35', {
   headers: {
     'X-GitHub-Api-Version': '2022-11-28',
     'Accept': 'application/vnd.github+json',
