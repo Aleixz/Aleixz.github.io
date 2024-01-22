@@ -88,7 +88,7 @@ window.addEventListener('load', displayReleases);
 document.getElementById('releasesList').addEventListener('click', function(event) {
   if (event.target.tagName === 'A') {
     event.preventDefault();
-    const actualDownloadUrl = event.target.href.replace('https://github.com/', 'https://download.fgit.cf/');
+    const actualDownloadUrl = event.target.href.replace('https://github.com/', 'https://kkgithub.com/');
     event.target.href = actualDownloadUrl;
     window.open(actualDownloadUrl, '_blank');
   }
