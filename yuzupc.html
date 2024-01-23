@@ -67,7 +67,7 @@ document.addEventListener('DOMContentLoaded', function() {
         <button class="button"  onclick="openDonateModal()">赞赏站长</button>
     </div>
     <div class="additional-info">
-        <p>下载加速服务由KGitHub提供</p>
+        <p>下载加速服务由FastGit提供</p>
         <p>Yuzu EA客户端由Github用户<span class="highlight"><a href="https://github.com/pineappleEA" target="_blank">@pineappleEA</a></span>提供</p>
     </div>
 </div>
@@ -144,7 +144,7 @@ function closeDonateModal() {
 
         // 设置下载按钮的点击事件
         document.getElementById('downloadButton').addEventListener('click', function() {
-          const actualDownloadUrl = downloadUrl.replace('https://github.com/', 'https://kkgithub.com/');
+          const actualDownloadUrl = downloadUrl.replace('https://github.com/', 'https://hub.fgit.cf/');
           window.location.href = actualDownloadUrl;
         });
       })
@@ -231,7 +231,7 @@ function closeDonateModal() {
     document.getElementById('releasesList').addEventListener('click', function (event) {
         if (event.target.tagName === 'A') {
             event.preventDefault();
-            const actualDownloadUrl = event.target.href.replace('https://github.com/', 'https://kkgithub.com/');
+            const actualDownloadUrl = event.target.href.replace('https://github.com/', 'https://hub.fgit.cf/');
             event.target.href = actualDownloadUrl;
             window.open(actualDownloadUrl, '_blank');
         }
