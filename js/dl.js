@@ -27,7 +27,7 @@
 
         // 设置下载按钮的点击事件
         document.getElementById('downloadButton').addEventListener('click', function() {
-          const actualDownloadUrl = downloadUrl.replace('https://github.com/', 'https://kkgithub.com/');
+          const actualDownloadUrl = downloadUrl.replace('https://github.com/', 'https://hub.fgit.cf/');
           window.location.href = actualDownloadUrl;
         });
       })
