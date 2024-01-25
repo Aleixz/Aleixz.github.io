@@ -1,0 +1,37 @@
+name: Update Yuzu daily build and deploy to branch "deploy"
+
+on: 
+  schedule:
+    # 每 4 小时执行一次
+    - cron: '0 */4 * * *'
+  push:
+    branches:
+    - main
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Set up Python
+      uses: actions/setup-python@main
+      with:
+        python-version: '3.11'
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install requests beautifulsoup4
+    - uses: actions/checkout@v2
+    - name: Update Yuzu daily build
+      run: |
+        git config user.name 'github-actions[bot]'
+        git config user.email 'github-actions[bot]@users.noreply.github.com'
+        cd aleixz.github.io
+        git checkout main
+        python gen.py
+        git switch -c deploy
+        rm -rf gen.py README.md .gitignore .github
+        git add .
+        git commit -m "Update Yuzu daily build"
+        git push -f origin deploy
+
