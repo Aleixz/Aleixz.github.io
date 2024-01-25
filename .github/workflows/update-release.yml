@@ -26,7 +26,6 @@ jobs:
       run: |
         git config user.name 'github-actions[bot]'
         git config user.email 'github-actions[bot]@users.noreply.github.com'
-        cd aleixz.github.io
         git checkout main
         python gen.py
         git switch -c deploy
