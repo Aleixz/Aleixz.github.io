@@ -1,189 +1,125 @@
 <!DOCTYPE html>
 <html>
- <head>
-  <meta charset="utf-8"/>
-  <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
-  <meta content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0" name="viewport">
-   <meta content="https://aleixz.github.io/img/path_to_icon2.jpg" property="og:image"/>
-   <meta content="zh-CN" name="language"/>
-   <meta content="zh-CN" http-equiv="Content-Language"/>
-   <meta content="YUZU安卓版历史版本下载 - 包括最新每日更新版和固件下载。获取YUZU模拟器的不同版本和固件，以便选择合适的版本进行下载和使用。" name="description"/>
-   <meta content="yuzu, ns模拟器, ns, yuzu安卓版, 历史版本,  yuzu旧版本, 手机版yuzu旧版下载, yuzu老版本下载" name="keywords"/>
-   <link href="./favicon.ico" rel="shortcut icon" type="image/x-icon"/>
-   <title>
-    YUZU安卓版历史版本下载 - 最新每日更新版和固件下载
-   </title>
-   <link href="./css/styles.css" rel="stylesheet"/>
-   <link href="./css/hisv.css" rel="stylesheet"/>
-   <link href="https://www.w3schools.cn/w3css/4/w3.css" rel="stylesheet"/>
-  </meta>
- </head>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0">
+    <meta property="og:image" content="https://aleixz.github.io/img/path_to_icon2.jpg">
+    <meta name="language" content="zh-CN">
+    <meta http-equiv="Content-Language" content="zh-CN">
+    <meta name="description" content="YUZU安卓版历史版本下载 - 包括最新每日更新版和固件下载。获取YUZU模拟器的不同版本和固件，以便选择合适的版本进行下载和使用。">
+    <meta name="keywords" content="yuzu, ns模拟器, ns, yuzu安卓版, 历史版本,  yuzu旧版本, 手机版yuzu旧版下载, yuzu老版本下载">
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
+    <title>YUZU安卓版历史版本下载 - 最新每日更新版和固件下载</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/hisv.css" />
+    <link rel="stylesheet" href="https://www.w3schools.cn/w3css/4/w3.css">
+  </head>
+  
+  <body>
+    <div id="mySidepanel" class="sidepanel">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+      <a href="./index.html">返回主页</a>
+      <a onclick="openModal()">赞赏</a>
+    </div>
+    <!-- 导航栏 -->
+    <nav class="navbar">
+      <a href="#" class="navbar-logo">
+        <span style="color: #0097ff;">YU</span><span style="color: red;">ZU</span>资源整合站</a>
+      <ul class="navbar-nav">
+        <button id="navbar-toggle" type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-navbar" aria-expanded="false" onclick="openNav()">
+          <span class="sr-only">
+          </span>
+          <span class="icon-bar">
+          </span>
+          <span class="icon-bar">
+          </span>
+          <span class="icon-bar">
+          </span>
+        </button>
+        <a class="page-scroll translate" href="./index.html">返回主页</a>
+        <a class="page-scroll" onclick="openModal()">赞赏</a>
+      </ul>
+    </nav>
+    <!-- 捐赠模态框 -->
+    <div class="modal" id="modal">
+      <div class="modal-content">
+        <h2>请站长喝奶茶</h2>
+        <img src="img/path_to_image.jpg" width="250" height="250" alt="二维码图片">
+        <p>支付宝扫码</p>
+        <p>您的捐赠将是鼓励我持续维护更新的动力。</p>
+        <!-- OK按钮 -->
+        <button class="modal-button" onclick="closeModal()">OK</button>
+        <!-- 关闭按钮 -->
+      </div>
+    </div>
+	<div class="air-wall">
+      </div>
+    <!-- 标题 -->
+    <h1 class="container">
+      <span>历史版本</h1>
+    <hr class="primary">
+    <main class="max">
  <body>
-  <div class="sidepanel" id="mySidepanel">
-   <a class="closebtn" href="javascript:void(0)" onclick="closeNav()">
-    ×
-   </a>
-   <a href="./index.html">
-    返回主页
-   </a>
-   <a onclick="openModal()">
-    赞赏
-   </a>
-  </div>
-  <!-- 导航栏 -->
-  <nav class="navbar">
-   <a class="navbar-logo" href="#">
-    <span style="color: #0097ff;">
-     YU
-    </span>
-    <span style="color: red;">
-     ZU
-    </span>
-    资源整合站
-   </a>
-   <ul class="navbar-nav">
-    <button aria-expanded="false" class="navbar-toggle collapsed" data-target="#bs-navbar" data-toggle="collapse" id="navbar-toggle" onclick="openNav()" type="button">
-     <span class="sr-only">
-     </span>
-     <span class="icon-bar">
-     </span>
-     <span class="icon-bar">
-     </span>
-     <span class="icon-bar">
-     </span>
-    </button>
-    <a class="page-scroll translate" href="./index.html">
-     返回主页
-    </a>
-    <a class="page-scroll" onclick="openModal()">
-     赞赏
-    </a>
-   </ul>
-  </nav>
-  <!-- 捐赠模态框 -->
-  <div class="modal" id="modal">
-   <div class="modal-content">
-    <h2>
-     请站长喝奶茶
-    </h2>
-    <img alt="二维码图片" height="250" src="img/path_to_image.jpg" width="250"/>
-    <p>
-     支付宝扫码
-    </p>
-    <p>
-     您的捐赠将是鼓励我持续维护更新的动力。
-    </p>
-    <!-- OK按钮 -->
-    <button class="modal-button" onclick="closeModal()">
-     OK
-    </button>
-    <!-- 关闭按钮 -->
-   </div>
-  </div>
-  <div class="air-wall">
-  </div>
-  <!-- 标题 -->
-  <h1 class="container">
-   <span>
-    历史版本
-   </span>
-  </h1>
-  <hr class="primary"/>
-  <main class="max">
-   <body>
-    <button class="accordion">
-     <img alt="图标" class="icon" height="25" src="./favicon.ico" style="margin: 5px;" width="25"/>
-     每日更新版历史版本
-    </button>
-    <div class="panel">
-     <p class="special-p">
-      <span style="color: #dcff00;">
-       点击以下任意版本开始下载
-      </span>
-     </p>
-     <ul id="releasesList">
-     </ul>
-    </div>
-    <button class="accordion">
-     <img alt="图标" class="icon" height="25" src="img/path_to_icon2.jpg" style="margin: 5px;" width="25"/>
-     正式版
-    </button>
-    <div class="panel">
-     <p class="special-p">
-      暂时先不记录正式版历史版本 因为我一个人维护不过来 望理解
-     </p>
-    </div>
-    <button class="accordion">
-     <img alt="图标" class="icon" height="25" src="img/settings.svg" style="margin: 5px;" width="25"/>
-     固件版本
-    </button>
-    <div class="panel">
-     <p class="special-p">
-      <span style="color: #dcff00;">
-       点击以下任意版本开始下载
-      </span>
-     </p>
-     <a class="w3-button w3-block w3-left-align" id="link01">
-      <span id="01">
-      </span>
-     </a>
-     <a class="w3-button w3-block w3-left-align" id="link02">
-      <span id="02">
-      </span>
-     </a>
-    </div>
-    <div class="profile-card">
-     <div class="card-header">
-      <div class="pic">
-       <img alt="" src="img/pic.jpg"/>
-      </div>
-      <div class="name">
-       蛋鐵君
-      </div>
-      <div class="desc">
-       如果喜欢我的网站快来B站关注我吧！
-      </div>
-      <a class="contact-btn" href="https://space.bilibili.com/68110291">
-       点击关注UP
-      </a>
-     </div>
-    </div>
-    <script async="" src="./js/hisv.js">
+
+<button class="accordion"><img class="icon" src="./favicon.ico"width="25" height="25" style="margin: 5px;" alt="图标">每日更新版历史版本 </button>
+
+<div class="panel">
+<p class="special-p"><span style="color: #dcff00;">点击以下任意版本开始下载</span></p>
+  <ul id="releasesList"></ul>
+</div>
+ 
+<button class="accordion"><img class="icon" src="img/path_to_icon2.jpg"width="25" height="25" style="margin: 5px;" alt="图标">正式版</button>
+<div class="panel">
+  <p class="special-p">暂时先不记录正式版历史版本 因为我一个人维护不过来 望理解</p>
+</div>
+
+<button class="accordion"><img class="icon" src="img/settings.svg"width="25" height="25" style="margin: 5px;" alt="图标">固件版本</button>
+<div class="panel">
+<p class="special-p"><span style="color: #dcff00;">点击以下任意版本开始下载</span></p>
+<a class="w3-button w3-block w3-left-align" id="link01"><span id="01"></span></a>
+<a class="w3-button w3-block w3-left-align" id="link02"><span id="02"></span></a>
+</div>
+ <div class="profile-card">
+ <div class="card-header">
+ <div class="pic">
+ <img src="img/pic.jpg" alt="">
+ </div>
+ <div class="name">蛋鐵君</div>
+ <div class="desc">如果喜欢我的网站快来B站关注我吧！</div>
+ <a href="https://space.bilibili.com/68110291" class="contact-btn">点击关注UP</a>
+ </div>
+ </div>
+	<script src="./js/hisv.js" async>
     </script>
     <script src="./js/jjss.js">
     </script>
-    <script src="./js/firmwarelink.js">
+        <script src="./js/firmwarelink.js">
     </script>
-    <script src="./js/imageCache.js">
+        <script src="./js/imageCache.js">
     </script>
-    <!-- Google tag (gtag.js) -->
-    <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-TNM6VLRK0K">
-    </script>
-    <script>
-     window.dataLayer = window.dataLayer || [];
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-TNM6VLRK0K"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
 
   gtag('config', 'G-TNM6VLRK0K');
-    </script>
+</script>
     <body>
-     <div class="air-wall">
-     </div>
-     <footer class="footer">
-      <div class="copyright">
-       © 2023 Aleixz. All rights reserved. 本网站仅供学习目的，不涉及任何商业行为。
+      <div class="air-wall">
       </div>
-      <div class="qr-code">
-       <a href="https://space.bilibili.com/68110291" target="_blank">
-        <div class="qr-code-text">
-         点击关注UP
+      <footer class="footer">
+        <div class="copyright">&copy; 2023 Aleixz. All rights reserved. 本网站仅供学习目的，不涉及任何商业行为。</div>
+        <div class="qr-code">
+          <a href="https://space.bilibili.com/68110291" target="_blank">
+            <div class="qr-code-text">点击关注UP</div>
+            <img src="img/eff71e52af653a70e0d857b300d3c6b69c388edb.png" alt="bilibili link">
+          </a>
         </div>
-        <img alt="bilibili link" src="img/eff71e52af653a70e0d857b300d3c6b69c388edb.png"/>
-       </a>
-      </div>
-     </footer>
+      </footer>
     </body>
-   </body>
-  </main>
- </body>
+
 </html>
