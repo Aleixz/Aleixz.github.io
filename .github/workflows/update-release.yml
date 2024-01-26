@@ -1,0 +1,51 @@
+name: Update Yuzu daily build and deploy to branch "deploy", then deploy to GitHub Pages
+
+on: 
+  schedule:
+    # 每 4 小时执行一次
+    - cron: '0 */4 * * *'
+  push:
+    branches:
+    - main
+  workflow_dispatch:
+
+# Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Set up Python
+      uses: actions/setup-python@main
+      with:
+        python-version: '3.11'
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install requests beautifulsoup4
+    - uses: actions/checkout@v2
+    - name: Update Yuzu daily build
+      run: |
+        git config user.name 'github-actions[bot]'
+        git config user.email 'github-actions[bot]@users.noreply.github.com'
+        git checkout main
+        python gen.py
+        git switch -c deploy
+        rm -rf gen.py README.md .gitignore
+        git add .
+        git commit -m "Update Yuzu daily build"
+        git push -f origin deploy
+    - name: Setup Pages 
+      uses: actions/configure-pages@v4
+    - name: Upload artifact
+      uses: actions/upload-pages-artifact@v3
+      with:
+        # Upload entire repository
+        path: '.'
+    - name: Deploy to GitHub Pages
+      id: deployment
+      uses: actions/deploy-pages@v4
