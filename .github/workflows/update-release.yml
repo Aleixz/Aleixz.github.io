@@ -20,9 +20,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Set up Python
-      uses: actions/setup-python@main
+      uses: actions/setup-python@v2
       with:
-        python-version: '3.11'
+        python-version: '3.x'
     - name: Install dependencies
       run: |
         python -m pip install --upgrade pip
@@ -42,10 +42,13 @@ jobs:
     - name: Setup Pages 
       uses: actions/configure-pages@v4
     - name: Upload artifact
-      uses: actions/upload-pages-artifact@v3
+      uses: actions/upload-artifact@v2
       with:
         # Upload entire repository
         path: '.'
     - name: Deploy to GitHub Pages
-      id: deployment
       uses: actions/deploy-pages@v4
+      with:
+        token: ${{ secrets.GITHUB_TOKEN }}
+        # Choose the directory to deploy
+        source_dir: .
