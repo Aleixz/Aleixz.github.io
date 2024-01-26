@@ -67,3 +67,60 @@ for releases in data:
 # 保存 html
 with open('hisv.html', 'w') as f:
     f.write(str(soup.prettify()))
+
+### 处理 yuzupc.html
+    
+with open('yuzupc.html', 'r') as f:
+    html = f.read()
+
+# 解析 yuzupc.html
+soup = BeautifulSoup(html, 'html.parser')
+
+# 请求 GitHub API
+data = requests.get('https://api.github.com/repos/pineappleEA/pineapple-src/releases?per_page=35').json()
+
+# 读取最新版本
+latest_ver = data[0]
+latest_date = latest_ver['published_at']
+version = latest_ver['tag_name']
+for objs in latest_ver['assets']:
+    if objs['name'].startswith('Windows'):
+        pkg_url = objs['browser_download_url']
+        break
+
+pkg_url = pkg_url.replace('https://github.com', 'https://hub.fgit.cf')
+# 读取时间
+date = datetime.datetime.strptime(latest_date, '%Y-%m-%dT%H:%M:%SZ')
+formattedDate = str(date.month) + '月' + str(date.day) + '号'
+# 替换 html
+soup.find(id='actualVersion').string = version
+soup.find('span', class_='date').string = formattedDate
+soup.find(id='downloadButton').attrs['onclick'] = "window.location.href='" + pkg_url + "'"
+
+
+# 清空 releasesList
+soup.find('div', id='releasesList').clear()
+
+# 读取历史版本
+for releases in data:
+    ver = releases['tag_name']
+    date = datetime.datetime.strptime(releases['published_at'], '%Y-%m-%dT%H:%M:%SZ')
+    formattedDate = str(date.year) + '年' + str(date.month) + '月' + str(date.day) + '日'
+    for objs in releases['assets']:
+        if objs['name'].startswith('Windows'):
+            pkg_url = objs['browser_download_url']
+            break
+    pkg_url = pkg_url.replace('https://github.com', 'https://hub.fgit.cf')
+    # 生成 html
+    new_li = soup.new_tag('li')
+    new_li['class'] = 'release-item'
+    new_a = soup.new_tag('a')
+    new_a['href'] = pkg_url
+    new_a['target'] = '_blank'
+    new_a.string = ver
+    new_li.append(new_a)
+    soup.find('div', id='releasesList').append(new_li)
+
+# 保存 html
+with open('yuzupc.html', 'w') as f:
+    f.write(str(soup.prettify()))
