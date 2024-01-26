@@ -68,8 +68,8 @@
 <div class="content-box" onclick="showSecondaryPage(1)">
   <h2>每日更新版</h2>
   <img alt="yuzu" src="./favicon.ico" width="60" height="60">
-  <p class="firmware-info">最新版本：<span id="loadingVersion">加载中...</span><span id="actualVersion" style="display: none;"></span></p>
-  <div class="publishDate" id="publishDate">更新日期获取中...</div>
+  <p class="firmware-info">最新版本：     <span id="actualVersion" style="display: inline; color: rgb(65, 255, 0);">版本</span></p>
+  <div class="publishDate" id="publishDate">发布日期：<span class="date">日期</span></div>
 </div>
 <!-- 二级页面1 -->
 <div class="secondary-page" id="secondaryPage1">
@@ -269,8 +269,6 @@
  </div>
  </div>
     </main>
-    <script src="./js/dl.js">
-    </script>
     <script src="./js/notice.js" async>
     </script>
     <script src="./js/jjss.js">

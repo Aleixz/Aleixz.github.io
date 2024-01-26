@@ -58,8 +58,8 @@ document.addEventListener('DOMContentLoaded', function() {
 <div class="content-box">
     <h2>电脑端YUZU模拟器</h2>
     <img src="img/yuzu-banner-early-access-white.svg" class="icon-img" alt="yuzu early access">
-    <p class="firmware-info">最新版本：<span id="loadingVersion">加载中...</span><span id="actualVersion" style="display: none;"></span></p>
-    <div class="publishDate" id="publishDate">更新日期获取中...</div>
+    <p class="firmware-info">最新版本：<span id="actualVersion" style="display: inline; color: rgb(51, 179, 255)"></span></p>
+    <div class="publishDate" id="publishDate">发布日期：<span class="date">日期</span></div>
     <div class="container2">
         <button class="button" id="downloadButton" href="#" download>立刻下载</button>
 		<button class="button" onclick="window.location.href='https://www.123pan.com/s/DCbbVv-1plHd.html'">固件下载</button>
@@ -82,7 +82,6 @@ document.addEventListener('DOMContentLoaded', function() {
         <div id="releasesList" class="panel-content">
             <!-- 通过 API 获取的数据将在这里显示 -->
         </div>
-        <p id="loadingStatus">列表加载中...</p>
     </div>
 
     <!-- （其他内容框和二级页面保持不变） -->
@@ -115,48 +114,6 @@ function closeDonateModal() {
 </script>
 
 <script>
-    function getLatestVersion() {
-      // 发起获取发布列表的请求
-      fetch('https://api.github.com/repos/pineappleEA/pineapple-src/releases', {
-        headers: {
-          'X-GitHub-Api-Version': '2022-11-28',
-          'Accept': 'application/vnd.github+json',
-          'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64; rv:121.0) Gecko/20100101 Firefox/121.0'
-        }
-      })
-      .then(response => response.json())
-      .then(data => {
-        // 获取最新版本号和下载链接
-        const latestRelease = data[0];
-        const version = latestRelease.tag_name.replace('EA-', 'EA-');
-        const downloadUrl = latestRelease.assets[1].browser_download_url;
-        const publishDate = new Date(latestRelease.published_at);
-        const formattedDate = '发布日期：' + '<span class="date">' + (publishDate.getMonth() + 1) + '月' + publishDate.getDate() + '号</span>';
-
-        // 更新页面上的版本号、下载链接和发布日期
-        document.getElementById('actualVersion').innerText = version;
-        document.getElementById('publishDate').innerHTML = formattedDate;
-
-        // 隐藏版本号加载中...
-        document.getElementById('loadingVersion').style.display = 'none';
-        document.getElementById('actualVersion').style.display = 'inline';
-		 document.getElementById('actualVersion').style.color = 'rgb(51, 179, 255)';
-
-        // 设置下载按钮的点击事件
-        document.getElementById('downloadButton').addEventListener('click', function() {
-          const actualDownloadUrl = downloadUrl.replace('https://github.com/', 'https://hub.fgit.cf/');
-          window.location.href = actualDownloadUrl;
-        });
-      })
-      .catch(error => {
-        console.error('获取最新版本时出错:', error);
-      });
-    }
-
-    // 页面加载完成后获取最新版本号
-    document.addEventListener('DOMContentLoaded', getLatestVersion);
-</script>
-<script>
     var acc = document.getElementsByClassName("accordion");
     var i;
 
@@ -176,66 +133,19 @@ function closeDonateModal() {
     // （您提供的 Object.assign 和 displayReleases 函数代码）
 
     function displayReleases() {
-        const releasesList = document.getElementById('releasesList');
-        const loadingStatus = document.getElementById('loadingStatus');
         const accordions = document.getElementsByClassName('accordion');
 
-        fetch('https://api.github.com/repos/pineappleEA/pineapple-src/releases?per_page=35', {
-            headers: {
-                'X-GitHub-Api-Version': '2022-11-28',
-                'Accept': 'application/vnd.github+json',
-                'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64; rv:121.0) Gecko/20100101 Firefox/121.0'
+        // 手动触发刷新手风琴状态
+        Array.from(accordions).forEach(accordion => {
+            if (accordion.classList.contains('active')) {
+                accordion.nextElementSibling.style.maxHeight = accordion.nextElementSibling.scrollHeight + "px";
+            } else {
+                accordion.nextElementSibling.style.maxHeight = null;
             }
-        })
-            .then(response => response.json())
-            .then(data => {
-                const releases = data.slice(0, 35).map(release => {
-                    // 查找名为"yuzu-*.apk"的附件，并获取对应的下载链接
-                    const apkAsset = release.assets.find(asset => asset.name.endsWith('.zip'));
-                    return {
-                        tag: release.tag_name,
-                        downloadUrl: apkAsset ? apkAsset.browser_download_url : null
-                    };
-                });
-
-                releases.forEach(release => {
-                    const listItem = document.createElement('li');
-                    const link = document.createElement('a');
-                    link.href = release.downloadUrl;
-                    link.textContent = release.tag;
-                    link.target = '_blank'; // 打开新窗口
-                    listItem.className = 'release-item';  // 添加样式类名
-                    listItem.appendChild(link);
-                    releasesList.appendChild(listItem);
-                });
-
-                // 隐藏加载状态
-                loadingStatus.style.display = 'none';
-
-                // 手动触发刷新手风琴状态
-                Array.from(accordions).forEach(accordion => {
-                    if (accordion.classList.contains('active')) {
-                        accordion.nextElementSibling.style.maxHeight = accordion.nextElementSibling.scrollHeight + "px";
-                    } else {
-                        accordion.nextElementSibling.style.maxHeight = null;
-                    }
-                });
-            })
-            .catch(error => {
-                console.error('Error:', error);
-            });
+        });
     }
 
     window.addEventListener('load', displayReleases);
-
-    document.getElementById('releasesList').addEventListener('click', function (event) {
-        if (event.target.tagName === 'A') {
-            event.preventDefault();
-            const actualDownloadUrl = event.target.href.replace('https://github.com/', 'https://hub.fgit.cf/');
-            event.target.href = actualDownloadUrl;
-            window.open(actualDownloadUrl, '_blank');
-        }
-    });
 </script>
 	    <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-TNM6VLRK0K"></script>
