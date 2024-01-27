@@ -1,16 +1,18 @@
 // 导航栏收起
 let prevScrollpos = window.pageYOffset; /* 保存上一个滚动位置 */
 let navbar = document.getElementById("navbar");
+let reservedHeight = 50; // 预留高度
 
 window.onscroll = function() {
     let currentScrollPos = window.pageYOffset;
-    if (prevScrollpos > currentScrollPos || currentScrollPos === 0) {
+    if (prevScrollpos > currentScrollPos || currentScrollPos < reservedHeight) {
         navbar.classList.remove("hidden"); /* 显示导航栏 */
     } else {
         navbar.classList.add("hidden"); /* 隐藏导航栏 */
     }
     prevScrollpos = currentScrollPos;
 }
+
 // 图片预览
 function openImage(img) {
   var modal = document.querySelector('.image-modal');
