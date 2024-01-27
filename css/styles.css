@@ -642,23 +642,28 @@ body::before {
 
 /* 导航栏样式 */
 .navbar {
-  position: fixed;
-  margin-bottom: 80px;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 60px;
-  background-color: rgb(16 16 16 / 51%);
-  backdrop-filter: saturate(200%) blur(8px);
-  -webkit-backdrop-filter: saturate(200%) blur(8px);
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0 20px;
-  z-index: 100;
+    position: fixed;
+    margin-bottom: 80px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    background-color: rgb(16 16 16 / 51%);
+    backdrop-filter: saturate(200%) blur(8px);
+    -webkit-backdrop-filter: saturate(200%) blur(8px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    z-index: 100;
+    transition: transform 0.3s ease; /* 添加过渡效果 */
+    transform: translateY(0); /* 初始状态为未隐藏 */
 }
 
+.navbar.hidden {
+    transform: translateY(-100%); /* 隐藏导航栏 */
+}
 .navbar-toggle .icon-bar {
   background-color: #fff;
 }
