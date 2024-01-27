@@ -7,17 +7,6 @@ body {
   padding: 0;
   font-family: Arial, sans-serif;
 }
- /* logo颜色 */
-.blue-text, .red-text {
-    display: inline;
-}
-.blue-text {
-    color: #0097ff;
-}
-
-.red-text {
-    color: red;
-}
  /* 存档模态框 */
 .my-custom-modal {
  display: none;
