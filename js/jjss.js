@@ -1,12 +1,13 @@
 // 导航栏收起
 let prevScrollpos = window.pageYOffset; /* 保存上一个滚动位置 */
+let navbar = document.getElementById("navbar");
 
 window.onscroll = function() {
     let currentScrollPos = window.pageYOffset;
-    if (prevScrollpos > currentScrollPos) {
-        document.getElementById("navbar").classList.remove("hidden"); /* 显示导航栏 */
+    if (prevScrollpos > currentScrollPos || currentScrollPos === 0) {
+        navbar.classList.remove("hidden"); /* 显示导航栏 */
     } else {
-        document.getElementById("navbar").classList.add("hidden"); /* 隐藏导航栏 */
+        navbar.classList.add("hidden"); /* 隐藏导航栏 */
     }
     prevScrollpos = currentScrollPos;
 }
