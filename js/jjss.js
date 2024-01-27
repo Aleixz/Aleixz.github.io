@@ -1,7 +1,7 @@
 // 导航栏收起
 let prevScrollpos = window.pageYOffset; /* 保存上一个滚动位置 */
 let navbar = document.getElementById("navbar");
-let reservedHeight = 50; // 预留高度
+let reservedHeight = 65; // 预留高度
 
 window.onscroll = function() {
     let currentScrollPos = window.pageYOffset;
