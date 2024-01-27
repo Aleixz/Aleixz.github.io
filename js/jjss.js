@@ -1,3 +1,15 @@
+// 导航栏收起
+let prevScrollpos = window.pageYOffset; /* 保存上一个滚动位置 */
+
+window.onscroll = function() {
+    let currentScrollPos = window.pageYOffset;
+    if (prevScrollpos > currentScrollPos) {
+        document.getElementById("navbar").classList.remove("hidden"); /* 显示导航栏 */
+    } else {
+        document.getElementById("navbar").classList.add("hidden"); /* 隐藏导航栏 */
+    }
+    prevScrollpos = currentScrollPos;
+}
 // 图片预览
 function openImage(img) {
   var modal = document.querySelector('.image-modal');
