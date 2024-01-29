@@ -2,8 +2,8 @@ name: Update Yuzu daily build and deploy to branch "deploy", then deploy to GitH
 
 on: 
   schedule:
-    # 每 4 小时执行一次
-    - cron: '0 */4 * * *'
+    # 每半小时执行一次
+    - cron: '0/30 * * * *'
   push:
     branches:
     - main
