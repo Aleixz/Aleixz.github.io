@@ -1121,9 +1121,6 @@ font-size: 20px;
 .secondary-page {
 	width:350px;
 }
-body {
-	background-image:url("../img/background1.svg");
-}
 .footer .qr-code {
 	margin-right:2px;
 }
@@ -1171,9 +1168,6 @@ a.page-scroll.translate,a.page-scroll[href="#one"],a.page-scroll[onclick="openMo
 }
 /* 对于小屏幕设备，调整部分样式 */
 @media screen and (max-width:383px) {
-	body {
-	background-image:url("../img/background1.svg");
-}
 .content-box {
 	width:400px;
 	height:260px;
