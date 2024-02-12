@@ -8,18 +8,18 @@ document.getElementById("downloadButton3").addEventListener("click", function() 
 });
 // 888以下
 // GPU链接1
-document.getElementById("bilibiliLink1").href = "https://dlink.host/lanzou/aHR0cHM6Ly93d3lyLmxhbnpvdXUuY29tL2k0TzgwMWx4a2hyYQ.jpg";
+document.getElementById("bilibiliLink1").href = "https://dlink.host/lanzou/aHR0cHM6Ly93d3AubGFuem91cC5jb20vaVBDWlIxbzRsbWNm.jpg";
 // GPU链接2
-document.getElementById("bilibiliLink2").href = "https://dlink.host/lanzou/aHR0cHM6Ly93d3AubGFuem91cC5jb20vaVpVTlIxa2wxb2tk.jpg";
+document.getElementById("bilibiliLink2").href = "https://dlink.host/lanzou/aHR0cHM6Ly93d3lyLmxhbnpvdXUuY29tL2k0TzgwMWx4a2hyYQ.jpg";
 // GPU链接3
 document.getElementById("bilibiliLink3").href = "https://dlink.host/lanzou/aHR0cHM6Ly93d3AubGFuem91cC5jb20vaU5FNlMxaWRpNXpn.jpg";
 // GPU链接4
 document.getElementById("bilibiliLink4").href = "https://dlink.host/lanzou/aHR0cHM6Ly93d3AubGFuem91cC5jb20vaTJIQksxaWRpNjFpIA.jpg";
 // 8GEN1以上
 // GPU链接1
-document.getElementById("bilibiliLink5").href = "https://dlink.host/lanzou/aHR0cHM6Ly93d3lyLmxhbnpvdXUuY29tL2k0TzgwMWx4a2hyYQ.jpg";
+document.getElementById("bilibiliLink5").href = "https://dlink.host/lanzou/aHR0cHM6Ly93d3AubGFuem91cC5jb20vaVBDWlIxbzRsbWNm.jpg";
 // GPU链接2
-document.getElementById("bilibiliLink6").href = "https://dlink.host/lanzou/aHR0cHM6Ly93d3AubGFuem91cC5jb20vaVpVTlIxa2wxb2tk.jpg";
+document.getElementById("bilibiliLink6").href = "https://dlink.host/lanzou/aHR0cHM6Ly93d3lyLmxhbnpvdXUuY29tL2k0TzgwMWx4a2hyYQ.jpg";
 // GPU链接3
 document.getElementById("bilibiliLink7").href = "https://dlink.host/lanzou/aHR0cHM6Ly93d3AubGFuem91cC5jb20vaUlDNDYxaWRpNXBn.jpg";
 // GPU链接4
