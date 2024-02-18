@@ -23,7 +23,7 @@ for objs in latest_ver['assets']:
         apk_url = objs['browser_download_url']
         break
 
-apk_url = apk_url.replace('https://github.com', 'https://hub.incept.pw')
+apk_url = apk_url.replace('https://github.com', 'https://kkgithub.com')
 # 读取时间
 date = datetime.datetime.strptime(latest_date, '%Y-%m-%dT%H:%M:%SZ')
 formattedDate = str(date.month) + '月' + str(date.day) + '号'
@@ -55,7 +55,7 @@ for releases in data:
         if objs['name'].endswith('.apk'):
             apk_url = objs['browser_download_url']
             break
-    apk_url = apk_url.replace('https://github.com', 'https://hub.incept.pw')
+    apk_url = apk_url.replace('https://github.com', 'https://kkgithub.com')
     # 生成 html
     new_li = soup.new_tag('li')
     new_a = soup.new_tag('a')
@@ -88,7 +88,7 @@ for objs in latest_ver['assets']:
         pkg_url = objs['browser_download_url']
         break
 
-pkg_url = pkg_url.replace('https://github.com', 'https://hub.incept.pw')
+pkg_url = pkg_url.replace('https://github.com', 'https://kkgithub.com')
 # 读取时间
 date = datetime.datetime.strptime(latest_date, '%Y-%m-%dT%H:%M:%SZ')
 formattedDate = str(date.month) + '月' + str(date.day) + '号'
@@ -110,7 +110,7 @@ for releases in data:
         if objs['name'].startswith('Windows'):
             pkg_url = objs['browser_download_url']
             break
-    pkg_url = pkg_url.replace('https://github.com', 'https://hub.incept.pw')
+    pkg_url = pkg_url.replace('https://github.com', 'https://kkgithub.com')
     # 生成 html
     new_li = soup.new_tag('li')
     new_li['class'] = 'release-item'
