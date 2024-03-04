@@ -1,302 +1,485 @@
 <!DOCTYPE html>
 <html>
-  
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
-  <meta name="google-site-verification" content="S7ZS4lv1t74R99IZxarGsSK9lBN61SbOi-g86E9WMDM">
-  <meta name="msvalidate.01" content="20B975A16115DE461CD1759401B68B6D" />
-  <meta name="language" content="zh-CN">
-  <meta http-equiv="Content-Language" content="zh-CN">
-  <meta name="description" content="获取安卓版yuzu模拟器的最新版本，yuzu模拟器是世界上备受欢迎的开源Nintendo Switch模拟器。高通专属驱动可优化游戏画面和帧率和Switch固件。立即访问并下载安卓版yuzu模拟器！">
-  <meta property="og:title" content="安卓版yuzu模拟器下载站">
-  <meta name="keywords" content="yuzu, ns模拟器, ns, yuzu安卓版, 下载,  Switch模拟器, 手机版yuzu, yuzu apk">
-  <meta property="og:image" content="https://aleixz.github.io/img/path_to_icon2.jpg">
-  <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
-  <title>安卓YUZU模拟器资源站 - 下载最新版本Switch模拟器、教程和固件下载</title>
-  <link rel="canonical" href="https://aleixz.github.io/">
-  <link rel="stylesheet" href="./css/styles.css" />
-</head>
-  <body>
-    <div id="notificationContainer" style="position: fixed; bottom: 20px; right: 20px;"></div>
-<div class="web_notice" id="webNotice" style="display: none;">
-  <div class="web_notice_content">
-    <h5>公告</h5>
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0" name="viewport"/>
+  <meta content="S7ZS4lv1t74R99IZxarGsSK9lBN61SbOi-g86E9WMDM" name="google-site-verification"/>
+  <meta content="20B975A16115DE461CD1759401B68B6D" name="msvalidate.01">
+   <meta content="zh-CN" name="language"/>
+   <meta content="zh-CN" http-equiv="Content-Language"/>
+   <meta content="获取安卓版yuzu模拟器的最新版本，yuzu模拟器是世界上备受欢迎的开源Nintendo Switch模拟器。高通专属驱动可优化游戏画面和帧率和Switch固件。立即访问并下载安卓版yuzu模拟器！" name="description"/>
+   <meta content="安卓版yuzu模拟器下载站" property="og:title"/>
+   <meta content="yuzu, ns模拟器, ns, yuzu安卓版, 下载,  Switch模拟器, 手机版yuzu, yuzu apk" name="keywords"/>
+   <meta content="https://aleixz.github.io/img/path_to_icon2.jpg" property="og:image"/>
+   <link href="./favicon.ico" rel="shortcut icon" type="image/x-icon"/>
+   <title>
+    安卓YUZU模拟器资源站 - 下载最新版本Switch模拟器、教程和固件下载
+   </title>
+   <link href="https://aleixz.github.io/" rel="canonical"/>
+   <link href="./css/styles.css" rel="stylesheet">
+   </link>
+  </meta>
+ </head>
+ <body>
+  <div id="notificationContainer" style="position: fixed; bottom: 20px; right: 20px;">
+  </div>
+  <div class="web_notice" id="webNotice" style="display: none;">
+   <div class="web_notice_content">
+    <h5>
+     公告
+    </h5>
     <div class="website_info">
     </div>
-    <a class="acknowledge_btn" onclick="removeWebNotice()">我知道了</a>
+    <a class="acknowledge_btn" onclick="removeWebNotice()">
+     我知道了
+    </a>
+   </div>
   </div>
-</div>
-    <div id="mySidepanel" class="sidepanel">
-      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
-      <a href="./hisv.html">历史版本</a>
-      <a href="./tut.html">YUZU教程</a>
-      <a href="#one">GPU驱动</a>
-      <a onclick="showWebNotice()">公告须知</a>
-      <a onclick="openModal()">赞赏</a>
+  <div class="sidepanel" id="mySidepanel">
+   <a class="closebtn" href="javascript:void(0)" onclick="closeNav()">
+    ×
+   </a>
+   <a href="./hisv.html">
+    历史版本
+   </a>
+   <a href="./tut.html">
+    YUZU教程
+   </a>
+   <a href="#one">
+    GPU驱动
+   </a>
+   <a onclick="showWebNotice()">
+    公告须知
+   </a>
+   <a onclick="openModal()">
+    赞赏
+   </a>
+  </div>
+  <!-- 导航栏 -->
+  <nav class="navbar" id="navbar">
+   <a class="navbar-logo" href="#">
+    YUZU资源整合站
+   </a>
+   <ul class="navbar-nav">
+    <button aria-expanded="false" class="navbar-toggle collapsed" data-target="#bs-navbar" data-toggle="collapse" id="navbar-toggle" onclick="openNav()" type="button">
+     <span class="sr-only">
+     </span>
+     <span class="icon-bar">
+     </span>
+     <span class="icon-bar">
+     </span>
+     <span class="icon-bar">
+     </span>
+    </button>
+    <a class="page-scroll translate" href="./hisv.html">
+     历史版本
+    </a>
+    <a class="page-scroll translate" href="./tut.html">
+     YUZU教程
+    </a>
+    <a class="page-scroll translate" href="#one">
+     GPU驱动
+    </a>
+    <a class="page-scroll translate" onclick="showWebNotice()">
+     公告须知
+    </a>
+    <a class="page-scroll" onclick="openModal()">
+     赞赏
+    </a>
+   </ul>
+  </nav>
+  <div class="air-wall">
+  </div>
+  <!-- 标题 -->
+  <h1 class="container">
+   YUZU安卓版
+  </h1>
+  <hr class="primary"/>
+  <!-- 内容框容器 -->
+  <div class="content-container">
+   <!-- 内容框1 -->
+   <div class="content-box" onclick="showSecondaryPage(1)">
+    <h2>
+     每日更新版
+    </h2>
+    <img alt="yuzu" height="60" src="./favicon.ico" width="60"/>
+    <p class="firmware-info">
+     最新版本：
+     <span id="actualVersion" style="display: inline; color: rgb(65, 255, 0);">
+      V278
+     </span>
+    </p>
+    <div class="publishDate" id="publishDate">
+     发布日期：
+     <span class="date">
+      3月4号
+     </span>
     </div>
-    <!-- 导航栏 -->
-    <nav class="navbar" id="navbar">
-      <a href="#" class="navbar-logo">YUZU资源整合站</a>
-      <ul class="navbar-nav">
-        <button id="navbar-toggle" type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-navbar" aria-expanded="false" onclick="openNav()">
-          <span class="sr-only">
-          </span>
-          <span class="icon-bar">
-          </span>
-          <span class="icon-bar">
-          </span>
-          <span class="icon-bar">
-          </span>
-        </button>
-        <a class="page-scroll translate" href="./hisv.html">历史版本</a>
-        <a class="page-scroll translate" href="./tut.html">YUZU教程</a>
-        <a class="page-scroll translate" href="#one">GPU驱动</a>
-        <a class="page-scroll translate" onclick="showWebNotice()">公告须知</a>
-        <a class="page-scroll" onclick="openModal()">赞赏</a>
-      </ul>
-    </nav>
-    <div class="air-wall">
-      </div>
-    <!-- 标题 -->
-    <h1 class="container">YUZU安卓版</h1>
-    <hr class="primary">
-    <!-- 内容框容器 -->
-    <div class="content-container">
-<!-- 内容框1 -->
-<div class="content-box" onclick="showSecondaryPage(1)">
-  <h2>每日更新版</h2>
-  <img alt="yuzu" src="./favicon.ico" width="60" height="60">
-  <p class="firmware-info">最新版本：     <span id="actualVersion" style="display: inline; color: rgb(65, 255, 0);">版本</span></p>
-  <div class="publishDate" id="publishDate">发布日期：<span class="date">日期</span></div>
-</div>
-<!-- 二级页面1 -->
-<div class="secondary-page" id="secondaryPage1">
-  <button class="close-button" onclick="hideSecondaryPage(1)">❌</button>
-  <h2>每日版下载</h2>
-  <img alt="支付宝二维码" src="img/path_to_image.jpg" width="200" height="200" class="centered-image">
-  <p>支付宝扫码请UP主喝奶茶</p>
-  <p>网站开发与维护不易，给个三联或者捐赠请我喝杯奶茶，谢谢！</p>
-  <button class="button" id="downloadButton" href="#" download>立刻下载</button>
-  <button class="button" onclick="window.location.href='./tut.html'">使用教程</button>
-</div>
-
-<!-- 内容框2 -->
-<div class="content-box" onclick="showSecondaryPage(2)">
-  <h2>月更正式版</h2>
-  <img alt="yuzu logo" src="img/path_to_icon2.jpg" height="60">
-  <p class="firmware-info">偏向于较为稳定的版本</p>
-  <p class="description">但对新出的CPU适配慢适合888以下</p>
-</div>
-<!-- 二级页面2 -->
-<div class="secondary-page" id="secondaryPage2">
-  <button class="close-button" onclick="hideSecondaryPage(2)">❌</button>
-  <h2>正式版下载</h2>
-  <img alt="支付宝二维码" src="img/path_to_image.jpg" width="200" height="200" class="centered-image">
-  <p>支付宝扫码请UP主喝奶茶</p>
-  <p>网站开发与维护不易，给个三联或者捐赠请我喝杯奶茶，谢谢！</p>
-  <button class="button" id="downloadButton2">立刻下载</button>
-  <button class="button" onclick="window.location.href='./tut.html'">使用教程</button>
-</div>
-<div class="content-box" onclick="window.location.href='./yuzupc.html'">
-  <h2>PC版YUZU</h2>
-  <img alt="yuzu pc下载" src="img/pc.svg" height="60">
-  <p class="firmware-info">面向于电脑开发的版本</p>
-  <p class="description">专门供向于桌面端的下载服务</p>
-</div>
-<!-- 内容框3 -->
-<div class="content-box" onclick="showSecondaryPage(5)">
-  <h2>存档下载</h2>
-  <img alt="ns存档图标" src="img/archive_folders_history_icon_188635.svg" width="60" height="50">
-  <p class="firmware-info">点击这里进入存档下载页</p>
-  <p class="description">游戏存档查看导入教程</p>
-</div>
-<!-- 二级页面3 -->
-<div class="secondary-page" id="secondaryPage5">
-  <button class="close-button" onclick="hideSecondaryPage(5)">❌</button>
-  <h2>NS游戏存档下载</h2>
-  <img alt="支付宝二维码" src="img/path_to_image.jpg" width="200" height="200" class="centered-image">
-  <p>支付宝扫码请UP主喝奶茶</p>
-  <p>网站开发与维护不易，给个三联或者捐赠请我喝杯奶茶，谢谢！</p>
-  <button class="button" onclick="window.location.href='./save.html'">前往下载</button>
-  <button class="button" onclick="window.location.href='./tut.html#7'">导入教程</button>
-</div>
-<!-- 内容框4 -->
-<div class="content-box" onclick="showSecondaryPage(4)">
-  <h2>密钥教程</h2>
-  <img alt="yuzu密钥" src="img/key.svg" width="60" height="50">
-  <p class="firmware-info"><span style="color: rgb(235, 255, 0);">法律原因本站不再提供密钥下载</span></p>
-  <p class="description">YUZU必备用于解密ns游戏</p>
-</div>
-<!-- 二级页面4 -->
-<div class="secondary-page" id="secondaryPage4">
-  <button class="close-button" onclick="hideSecondaryPage(4)">❌</button>
-  <h2>使用教程</h2>
-  <img alt="支付宝二维码" src="img/path_to_image.jpg" width="200" height="200" class="centered-image">
-  <p>支付宝扫码请UP主喝奶茶</p>
-  <p>非常抱歉由于法律原因本站已下架密钥的下载，但您依然可以点击下方参考本站的密钥获取教程。</p>
-  <button class="button" onclick="window.location.href='./tut.html#one'">获取教程</button>
-  <button class="button" onclick="window.location.href='https://space.bilibili.com/68110291'">关注UP</button>
-</div>
-<!-- 内容框5 -->
-<div class="content-box" onclick="showSecondaryPage(3)">
-  <h2>固件</h2>
-  <img alt="ns固件图标" src="img/settings.svg" width="60" height="60">
-<p class="firmware-info">固件版本:<span style="color: rgb(235, 255, 0);">17.0.0</span></p>
-<p class="description">当游戏出现乱码时需要将固件导入YUZU</p>
-</div>
-<!-- 二级页面5 -->
-<div class="secondary-page" id="secondaryPage3">
-  <button class="close-button" onclick="hideSecondaryPage(3)">❌</button>
-  <h2>固件下载</h2>
-  <img alt="支付宝二维码" src="img/path_to_image.jpg" width="200" height="200" class="centered-image">
-  <p>支付宝扫码请UP主喝奶茶</p>
-  <p>网站开发与维护不易，给个三联或者捐赠请我喝杯奶茶，谢谢！</p>
-  <button class="button" id="downloadButton3">立刻下载</button>
-  <button class="button" onclick="window.location.href='./tut.html#2'">导入教程</button>
-</div>
+   </div>
+   <!-- 二级页面1 -->
+   <div class="secondary-page" id="secondaryPage1">
+    <button class="close-button" onclick="hideSecondaryPage(1)">
+     ❌
+    </button>
+    <h2>
+     每日版下载
+    </h2>
+    <img alt="支付宝二维码" class="centered-image" height="200" src="img/path_to_image.jpg" width="200"/>
+    <p>
+     支付宝扫码请UP主喝奶茶
+    </p>
+    <p>
+     网站开发与维护不易，给个三联或者捐赠请我喝杯奶茶，谢谢！
+    </p>
+    <button class="button" download="" href="#" id="downloadButton" onclick="window.location.href='https://kkgithub.com/yuzu-emu/yuzu-android/releases/download/android-278/yuzu-20240304-dc529a89a.apk'">
+     立刻下载
+    </button>
+    <button class="button" onclick="window.location.href='./tut.html'">
+     使用教程
+    </button>
+   </div>
+   <!-- 内容框2 -->
+   <div class="content-box" onclick="showSecondaryPage(2)">
+    <h2>
+     月更正式版
+    </h2>
+    <img alt="yuzu logo" height="60" src="img/path_to_icon2.jpg"/>
+    <p class="firmware-info">
+     偏向于较为稳定的版本
+    </p>
+    <p class="description">
+     但对新出的CPU适配慢适合888以下
+    </p>
+   </div>
+   <!-- 二级页面2 -->
+   <div class="secondary-page" id="secondaryPage2">
+    <button class="close-button" onclick="hideSecondaryPage(2)">
+     ❌
+    </button>
+    <h2>
+     正式版下载
+    </h2>
+    <img alt="支付宝二维码" class="centered-image" height="200" src="img/path_to_image.jpg" width="200"/>
+    <p>
+     支付宝扫码请UP主喝奶茶
+    </p>
+    <p>
+     网站开发与维护不易，给个三联或者捐赠请我喝杯奶茶，谢谢！
+    </p>
+    <button class="button" id="downloadButton2">
+     立刻下载
+    </button>
+    <button class="button" onclick="window.location.href='./tut.html'">
+     使用教程
+    </button>
+   </div>
+   <div class="content-box" onclick="window.location.href='./yuzupc.html'">
+    <h2>
+     PC版YUZU
+    </h2>
+    <img alt="yuzu pc下载" height="60" src="img/pc.svg"/>
+    <p class="firmware-info">
+     面向于电脑开发的版本
+    </p>
+    <p class="description">
+     专门供向于桌面端的下载服务
+    </p>
+   </div>
+   <!-- 内容框3 -->
+   <div class="content-box" onclick="showSecondaryPage(5)">
+    <h2>
+     存档下载
+    </h2>
+    <img alt="ns存档图标" height="50" src="img/archive_folders_history_icon_188635.svg" width="60"/>
+    <p class="firmware-info">
+     点击这里进入存档下载页
+    </p>
+    <p class="description">
+     游戏存档查看导入教程
+    </p>
+   </div>
+   <!-- 二级页面3 -->
+   <div class="secondary-page" id="secondaryPage5">
+    <button class="close-button" onclick="hideSecondaryPage(5)">
+     ❌
+    </button>
+    <h2>
+     NS游戏存档下载
+    </h2>
+    <img alt="支付宝二维码" class="centered-image" height="200" src="img/path_to_image.jpg" width="200"/>
+    <p>
+     支付宝扫码请UP主喝奶茶
+    </p>
+    <p>
+     网站开发与维护不易，给个三联或者捐赠请我喝杯奶茶，谢谢！
+    </p>
+    <button class="button" onclick="window.location.href='./save.html'">
+     前往下载
+    </button>
+    <button class="button" onclick="window.location.href='./tut.html#7'">
+     导入教程
+    </button>
+   </div>
+   <!-- 内容框4 -->
+   <div class="content-box" onclick="showSecondaryPage(4)">
+    <h2>
+     密钥教程
+    </h2>
+    <img alt="yuzu密钥" height="50" src="img/key.svg" width="60"/>
+    <p class="firmware-info">
+     <span style="color: rgb(235, 255, 0);">
+      法律原因本站不再提供密钥下载
+     </span>
+    </p>
+    <p class="description">
+     YUZU必备用于解密ns游戏
+    </p>
+   </div>
+   <!-- 二级页面4 -->
+   <div class="secondary-page" id="secondaryPage4">
+    <button class="close-button" onclick="hideSecondaryPage(4)">
+     ❌
+    </button>
+    <h2>
+     使用教程
+    </h2>
+    <img alt="支付宝二维码" class="centered-image" height="200" src="img/path_to_image.jpg" width="200"/>
+    <p>
+     支付宝扫码请UP主喝奶茶
+    </p>
+    <p>
+     非常抱歉由于法律原因本站已下架密钥的下载，但您依然可以点击下方参考本站的密钥获取教程。
+    </p>
+    <button class="button" onclick="window.location.href='./tut.html#one'">
+     获取教程
+    </button>
+    <button class="button" onclick="window.location.href='https://space.bilibili.com/68110291'">
+     关注UP
+    </button>
+   </div>
+   <!-- 内容框5 -->
+   <div class="content-box" onclick="showSecondaryPage(3)">
+    <h2>
+     固件
+    </h2>
+    <img alt="ns固件图标" height="60" src="img/settings.svg" width="60"/>
+    <p class="firmware-info">
+     固件版本:
+     <span style="color: rgb(235, 255, 0);">
+      17.0.0
+     </span>
+    </p>
+    <p class="description">
+     当游戏出现乱码时需要将固件导入YUZU
+    </p>
+   </div>
+   <!-- 二级页面5 -->
+   <div class="secondary-page" id="secondaryPage3">
+    <button class="close-button" onclick="hideSecondaryPage(3)">
+     ❌
+    </button>
+    <h2>
+     固件下载
+    </h2>
+    <img alt="支付宝二维码" class="centered-image" height="200" src="img/path_to_image.jpg" width="200"/>
+    <p>
+     支付宝扫码请UP主喝奶茶
+    </p>
+    <p>
+     网站开发与维护不易，给个三联或者捐赠请我喝杯奶茶，谢谢！
+    </p>
+    <button class="button" id="downloadButton3">
+     立刻下载
+    </button>
+    <button class="button" onclick="window.location.href='./tut.html#2'">
+     导入教程
+    </button>
+   </div>
+  </div>
+  <!-- 捐赠模态框 -->
+  <div class="modal" id="modal">
+   <div class="modal-content">
+    <h2>
+     请站长喝奶茶
+    </h2>
+    <img alt="二维码图片" height="250" src="img/path_to_image.jpg" width="250"/>
+    <p>
+     支付宝扫码
+    </p>
+    <p>
+     您的捐赠将是鼓励我持续维护更新的动力。
+    </p>
+    <!-- OK按钮 -->
+    <button class="modal-button" onclick="closeModal()">
+     OK
+    </button>
+    <!-- 关闭按钮 -->
+   </div>
+  </div>
+  <div class="header max flex flex-center" id="one">
+   <h3>
+    GPU驱动
+   </h3>
+  </div>
+  <main class="max">
+   <!--大板块-->
+   <main class="app">
+    <div class="app-meta flex">
+     <h4>
+      <i class="fan son-xing">
+      </i>
+      888以下通用
+     </h4>
+     <h4>
+      选择合适的驱动以获得最佳帧率与画面的稳定性
+     </h4>
     </div>
-    <!-- 捐赠模态框 -->
-    <div class="modal" id="modal">
-      <div class="modal-content">
-        <h2>请站长喝奶茶</h2>
-        <img alt="支付宝二维码" src="img/path_to_image.jpg" width="250" height="250" alt="二维码图片">
-        <p>支付宝扫码</p>
-        <p>您的捐赠将是鼓励我持续维护更新的动力。</p>
-        <!-- OK按钮 -->
-        <button class="modal-button" onclick="closeModal()">OK</button>
-        <!-- 关闭按钮 -->
-      </div>
+    <ul class="flex">
+     <li class="app-item">
+      <a class="flex" id="bilibiliLink1" rel="bookmark" target="_blank">
+       <img alt="下载" class="app-item-img" src="img/download.svg"/>
+       <h4 class="app-item-title">
+        萝卜R17 24.1.0（版本1.3.277）
+       </h4>
+       <i class="fan son-you">
+       </i>
+      </a>
+     </li>
+     <li class="app-item">
+      <a class="flex" id="bilibiliLink2" rel="bookmark" target="_blank">
+       <img alt="下载" class="app-item-img" src="img/download.svg"/>
+       <h4 class="app-item-title">
+        萝卜Alpha-13（版本1.3.277紫先生）
+       </h4>
+       <i class="fan son-you">
+       </i>
+      </a>
+     </li>
+     <li class="app-item">
+      <a class="flex" id="bilibiliLink3" rel="bookmark" target="_blank">
+       <img alt="下载" class="app-item-img" src="img/download.svg"/>
+       <h4 class="app-item-title">
+        a615.50-adpkg
+       </h4>
+       <i class="fan son-you">
+       </i>
+      </a>
+     </li>
+     <li class="app-item">
+      <a class="flex" id="bilibiliLink4" rel="bookmark" target="_blank">
+       <img alt="下载" class="app-item-img" src="img/download.svg"/>
+       <h4 class="app-item-title">
+        a682.adpkg
+       </h4>
+       <i class="fan son-you">
+       </i>
+      </a>
+     </li>
+    </ul>
+   </main>
+   <!--大板块-->
+   <main class="app">
+    <div class="app-meta flex">
+     <h4>
+      <i class="fan son-xing">
+      </i>
+      8GEN1以上通用（7GEN1以上也可用）
+     </h4>
     </div>
-    <div class="header max flex flex-center" id="one">
-      <h3>GPU驱动</h3>
+    <ul class="flex">
+     <li class="app-item">
+      <a class="flex" id="bilibiliLink5" rel="bookmark" target="_blank">
+       <img alt="下载" class="app-item-img" src="img/download.svg"/>
+       <h4 class="app-item-title">
+        萝卜R17 24.1.0（版本1.3.277）
+       </h4>
+       <i class="fan son-you">
+       </i>
+      </a>
+     </li>
+     <li class="app-item">
+      <a class="flex" id="bilibiliLink6" rel="bookmark" target="_blank">
+       <img alt="下载" class="app-item-img" src="img/download.svg"/>
+       <h4 class="app-item-title">
+        萝卜Alpha-13（版本1.3.277紫先生）
+       </h4>
+       <i class="fan son-you">
+       </i>
+      </a>
+     </li>
+     <li class="app-item">
+      <a class="flex" id="bilibiliLink7" rel="bookmark" target="_blank">
+       <img alt="下载" class="app-item-img" src="img/download.svg"/>
+       <h4 class="app-item-title">
+        adreno676.42.adpkg
+       </h4>
+       <i class="fan son-you">
+       </i>
+      </a>
+     </li>
+     <li class="app-item">
+      <a class="flex" id="bilibiliLink8" rel="bookmark" target="_blank">
+       <img alt="下载" class="app-item-img" src="img/download.svg"/>
+       <h4 class="app-item-title">
+        A744.8.adpkg（8GEN3专用）
+       </h4>
+       <i class="fan son-you">
+       </i>
+      </a>
+     </li>
+    </ul>
+   </main>
+   <div class="profile-card">
+    <div class="card-header">
+     <div class="pic">
+      <img alt="" src="img/pic.jpg"/>
+     </div>
+     <div class="name">
+      蛋鐵君
+     </div>
+     <div class="desc">
+      如果喜欢我的网站快来B站关注我吧！
+     </div>
+     <a class="contact-btn" href="https://space.bilibili.com/68110291">
+      点击关注UP
+     </a>
     </div>
-    <main class="max">
-    <!--大板块-->
-      <main class="app">
-        <div class="app-meta flex">
-          <h4>
-            <i class="fan son-xing">
-            </i>888以下通用</h4>
-          <h4>选择合适的驱动以获得最佳帧率与画面的稳定性</h4>
-        </div>
-        <ul class="flex">
-          <li class="app-item">
-            <a class="flex" id="bilibiliLink1" target="_blank" rel="bookmark">
-              <img alt="下载" class="app-item-img" src="img/download.svg">
-              <h4 class="app-item-title">萝卜R17 24.1.0（版本1.3.277）</h4>
-              <i class="fan son-you">
-              </i>
-            </a>
-          </li>
-          <li class="app-item">
-            <a class="flex" id="bilibiliLink2" target="_blank" rel="bookmark">
-              <img alt="下载" class="app-item-img" src="img/download.svg">
-              <h4 class="app-item-title">萝卜Alpha-13（版本1.3.277紫先生）</h4>
-              <i class="fan son-you">
-              </i>
-            </a>
-          </li>
-          <li class="app-item">
-            <a class="flex" id="bilibiliLink3" target="_blank" rel="bookmark">
-              <img alt="下载" class="app-item-img" src="img/download.svg">
-              <h4 class="app-item-title">a615.50-adpkg</h4>
-              <i class="fan son-you">
-              </i>
-            </a>
-          </li>
-          <li class="app-item">
-            <a class="flex" id="bilibiliLink4" target="_blank" rel="bookmark">
-              <img alt="下载" class="app-item-img" src="img/download.svg">
-              <h4 class="app-item-title">a682.adpkg</h4>
-              <i class="fan son-you">
-              </i>
-            </a>
-          </li>
-        </ul>
-      </main>
-      <!--大板块-->
-      <main class="app">
-        <div class="app-meta flex">
-          <h4>
-            <i class="fan son-xing">
-            </i>8GEN1以上通用（7GEN1以上也可用）</h4>
-        </div>
-        <ul class="flex">
-          <li class="app-item">
-            <a class="flex" id="bilibiliLink5" target="_blank" rel="bookmark">
-              <img alt="下载" class="app-item-img" src="img/download.svg">
-              <h4 class="app-item-title">萝卜R17 24.1.0（版本1.3.277）</h4>
-              <i class="fan son-you">
-              </i>
-            </a>
-          </li>
-          <li class="app-item">
-            <a class="flex" id="bilibiliLink6" target="_blank" rel="bookmark">
-              <img alt="下载" class="app-item-img" src="img/download.svg">
-              <h4 class="app-item-title">萝卜Alpha-13（版本1.3.277紫先生）</h4>
-              <i class="fan son-you">
-              </i>
-            </a>
-          </li>
-          <li class="app-item">
-            <a class="flex" id="bilibiliLink7" target="_blank" rel="bookmark">
-              <img alt="下载" class="app-item-img" src="img/download.svg">
-              <h4 class="app-item-title">adreno676.42.adpkg</h4>
-              <i class="fan son-you">
-              </i>
-            </a>
-          </li>
-          <li class="app-item">
-            <a class="flex" id="bilibiliLink8" target="_blank" rel="bookmark">
-              <img alt="下载" class="app-item-img" src="img/download.svg">
-              <h4 class="app-item-title">A744.8.adpkg（8GEN3专用）</h4>
-              <i class="fan son-you">
-              </i>
-            </a>
-          </li>
-        </ul>
-      </main>
-      <div class="profile-card">
- <div class="card-header">
- <div class="pic">
- <img alt="" src="img/pic.jpg" >
- </div>
- <div class="name">蛋鐵君</div>
- <div class="desc">如果喜欢我的网站快来B站关注我吧！</div>
- <a href="https://space.bilibili.com/68110291" class="contact-btn">点击关注UP</a>
- </div>
- </div>
-    </main>
-    <script src="./js/notice.js" async>
-    </script>
-    <script src="./js/jjss.js">
-    </script>
-    <script src="./js/link.js">
-    </script>
-    <script src="./js/imageCache.js">
-    </script>
-    <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-TNM6VLRK0K"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
+   </div>
+  </main>
+  <script async="" src="./js/notice.js">
+  </script>
+  <script src="./js/jjss.js">
+  </script>
+  <script src="./js/link.js">
+  </script>
+  <script src="./js/imageCache.js">
+  </script>
+  <!-- Google tag (gtag.js) -->
+  <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-TNM6VLRK0K">
+  </script>
+  <script>
+   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
 
   gtag('config', 'G-TNM6VLRK0K');
-</script>
-    <body>
-      <div class="air-wall">
+  </script>
+  <body>
+   <div class="air-wall">
+   </div>
+   <footer class="footer">
+    <div class="copyright">
+     © 2023 Aleixz. All rights reserved. 本网站仅供学习目的，不涉及任何商业行为。
+    </div>
+    <div class="qr-code">
+     <a href="https://space.bilibili.com/68110291" target="_blank">
+      <div class="qr-code-text">
+       点击关注UP
       </div>
-      <footer class="footer">
-        <div class="copyright">&copy; 2023 Aleixz. All rights reserved. 本网站仅供学习目的，不涉及任何商业行为。</div>
-        <div class="qr-code">
-          <a href="https://space.bilibili.com/68110291" target="_blank">
-            <div class="qr-code-text">点击关注UP</div>
-            <img src="img/eff71e52af653a70e0d857b300d3c6b69c388edb.png" alt="bilibili link">
-          </a>
-        </div>
-      </footer>
-    </body>
-
+      <img alt="bilibili link" src="img/eff71e52af653a70e0d857b300d3c6b69c388edb.png"/>
+     </a>
+    </div>
+   </footer>
+  </body>
+ </body>
 </html>
